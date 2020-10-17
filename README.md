@@ -10,3 +10,7 @@ I wish to analyse how my game is progressing by accessing my data in Garmin and 
 1. Gather ID scorecards which is necessary to call garmin API. - In Progress
 2. Aquire data through a Garmin Webservice. - Backlog
 3. Begin to visualise the data. - Backlog
+
+## Dependencies
+
+1. Selenium
