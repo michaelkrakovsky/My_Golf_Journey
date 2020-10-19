@@ -14,3 +14,4 @@ I wish to analyse how my game is progressing by accessing my data in Garmin and 
 ## Dependencies
 
 1. Selenium
+2. MongoDB

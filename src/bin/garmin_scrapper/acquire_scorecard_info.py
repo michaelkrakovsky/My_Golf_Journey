@@ -9,6 +9,7 @@ from My_Golf_Journey.config import garmin_info, exe_paths
 from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from re import findall
 from time import sleep
 
 username_field = '//input[@name="username"]'
@@ -61,13 +62,28 @@ def login_garmin(get_scorecard_ids=False):
 
     return driver
 
-# print("Done")
+def parse_score_card_ids():
 
-driver = login_garmin()
-url = 'https://connect.garmin.com/modern/proxy/gcs-golfcommunity/api/v2/scorecard/detail?scorecard-ids={}&include-next-previous-ids=true&user-locale=en'.format(155069236)
-sleep(10)
-driver.get(url)
-print('PLZZZZ')
-sleep(10)
-print(driver.page_source)
-sleep(5)
+    """
+    Function Description: Parse the page source to retrieve all the scorecard ids on a particular page.
+    Function Parameters: Nothing
+    Function Throws: Nothing
+    Function Returns: (List: The score card ids that are retrieved.)
+    """
+
+    with open(source_data_location, 'r') as f:
+        text = f.read()
+    ids = findall("data-scorecard-id=\"\d*\"", text)
+    return [int(findall("\d\d*", id)[0]) for id in ids]
+
+# driver = login_garmin()
+# # https://connect.garmin.com/modern/proxy/gcs-golfcommunity/api/v2/scorecard/detail?scorecard-ids=155069236&include-next-previous-ids=true&user-locale=en
+# url = 'https://connect.garmin.com/modern/proxy/gcs-golfcommunity/api/v2/scorecard/detail?scorecard-ids={}&include-next-previous-ids=true&user-locale=en'.format(155069236)
+# sleep(10)
+# driver.get(url)
+# print('PLZZZZ')
+# sleep(10)
+# print(driver.page_source)
+# sleep(5)
+print(parse_score_card_ids())
+print("Done")
