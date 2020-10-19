@@ -86,4 +86,4 @@ def parse_score_card_ids():
 # print(driver.page_source)
 # sleep(5)
 print(parse_score_card_ids())
-print("Done") 
+print("Done")
