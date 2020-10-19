@@ -5,12 +5,14 @@
 
 from sys import path
 path.extend('../../../')                                                                    # Import the entire project.
-from My_Golf_Journey.config import garmin_info, exe_paths
+from My_Golf_Journey.config import garmin_info, exe_paths, mongo_config
 from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from re import findall
 from time import sleep
+from pymongo import MongoClient
+from json import loads
 
 username_field = '//input[@name="username"]'
 password_field = '//input[@name="password"]'
@@ -19,13 +21,29 @@ frame = '//iframe'
 gen_url = "https://connect.garmin.com/signin/"
 score_url = 'https://connect.garmin.com/modern/profile/433ae1d7-ba04-4209-bfa4-4814c426397d/scorecards'
 source_data_location = Path(__file__).absolute().parent.parent.parent / 'data' / 'score_card_source.txt'
+log_file = Path(__file__).absolute().parent.parent.parent.parent / 'logs' / 'score_card_source_logs.txt'
 
-def enter_text_w_xpath(xpath, val):
+def connect_to_scorecards_collection():
+
+    """
+    Function Description: Connecto the scorecards collections.
+    Function Parameters: Nothing
+    Function Throws: Nothing
+    Function Returns: (Collection: The MongoDB connection.)
+    """
+
+    client = MongoClient(mongo_config['conn_str'])
+    client.list_database_names()
+    db = client.Golf_Stats_DB
+    return db.Scorecards
+
+def enter_text_w_xpath(xpath, val, driver):
 
     """
     Function Description: Enter text into an input field given the xpath.
     Function Parameters: xpath (String: The xpath of the element.),
-        val (String: The value to be entered.)
+        val (String: The value to be entered.),
+        driver (WebBrowser: The Chrome browser we are controlling.)
     Fucntion Throws: Nothing
     Function Returns: Nothing
     """
@@ -50,8 +68,8 @@ def login_garmin(get_scorecard_ids=False):
     iframe = driver.find_element_by_xpath(frame)
     driver.switch_to.frame(iframe)
     # Enter credentials.
-    enter_text_w_xpath(username_field, garmin_info['username'])
-    enter_text_w_xpath(password_field, garmin_info['password'])
+    enter_text_w_xpath(username_field, garmin_info['username'], driver)
+    enter_text_w_xpath(password_field, garmin_info['password'], driver)
     driver.find_element_by_xpath(submit_button).click()
 
     if get_scorecard_ids:
@@ -73,17 +91,76 @@ def parse_score_card_ids():
 
     with open(source_data_location, 'r') as f:
         text = f.read()
-    ids = findall("data-scorecard-id=\"\d*\"", text)
-    return [int(findall("\d\d*", id)[0]) for id in ids]
+    ids = findall("data-scorecard-id=\"\\d*\"", text)
+    return [int(findall("\\d\\d*", id)[0]) for id in ids]
 
-# driver = login_garmin()
-# # https://connect.garmin.com/modern/proxy/gcs-golfcommunity/api/v2/scorecard/detail?scorecard-ids=155069236&include-next-previous-ids=true&user-locale=en
-# url = 'https://connect.garmin.com/modern/proxy/gcs-golfcommunity/api/v2/scorecard/detail?scorecard-ids={}&include-next-previous-ids=true&user-locale=en'.format(155069236)
-# sleep(10)
-# driver.get(url)
-# print('PLZZZZ')
-# sleep(10)
-# print(driver.page_source)
-# sleep(5)
-print(parse_score_card_ids())
-print("Done")
+def check_scorecard(id, mongo_conn):
+
+    """
+    Function Description: Check to see if the scorecard exists in the DB.
+    Function Parameters: id (Int: The id of the scorecard from Garmin we are inserting.),
+        mongo_conn (Collection: The connection to the Mongo Collection.)
+    Function Throws: Nothing
+    Function Returns: (Boolean: True if the scorecard exists and False otherwise.) 
+    """
+
+    scorecard = mongo_conn.find_one({"scorecardDetails.scorecard.id":id})
+    if scorecard == None:
+        return False
+    return True
+
+def insert_scorecard(json_text, mongo_conn):
+
+    """
+    Function Description: Add scorecard information into the Mongo Database.
+    Function Parameters: json_text (JSON: The json dictionary containing our desired information.),
+        mongo_conn (Collection: The connection to the Mongo Collection.)
+    Function Throws: Nothing
+    Function Returns: (Boolean: True or False depending on if the information is inserted.)
+    """
+    
+    try:
+        post = loads(json_text)
+    except:
+        with open(log_file, 'w+') as f:
+            f.write(str(json_text))
+            raise ValueError("Unable to insert Object into Mongo DB. Check the log file at {}.".format(log_file.absolute()))
+            quit(1)
+    mongo_conn.insert_one(post).inserted_id
+    return True
+
+def get_scorecard_info():
+    
+    """
+    Function Description: Retrieve the scorecard and game information from all the scorecard ids.
+    Function Parameters: Nothing
+    Function Throws: Nothing
+    Function Returns: (Boolean: True or False depending on the behavior of our script.)
+    """
+
+    collection = connect_to_scorecards_collection()
+    driver = login_garmin()
+    sleep(10)                                                      # Wait prior to starting to parse the next score card.
+    # Sample Link: https://connect.garmin.com/modern/proxy/gcs-golfcommunity/api/v2/scorecard/detail?scorecard-ids=155069236&include-next-previous-ids=true&user-locale=en
+    ids = parse_score_card_ids()
+    url = 'https://connect.garmin.com/modern/proxy/gcs-golfcommunity/api/v2/scorecard/detail?scorecard-ids={}&include-next-previous-ids=true&user-locale=en'  
+    counter = 0
+    for id in ids:
+        is_in = check_scorecard(id, collection)               
+        if not is_in:                                                 # Ensure that the scorecard does not already exist in the DB. Insert if not done already.
+            driver.get(url.format(id))
+            sleep(1)
+            json_text = findall('{.*}', str(driver.page_source))[0]   # Retrieve only the contents within the curley brackets.
+            sleep(1)
+            insert_scorecard(json_text, collection)
+            counter += 1
+    print("We have inserted {} scorecards.".format(counter))
+    return True
+
+if __name__ == "__main__":
+
+    result = get_scorecard_info()
+    if result:
+        print("The scorecards were retrieved from Garmin and inserted. Please check MongoDB.")
+    else:
+        print("The script did not retrieve the scorecard information.")
