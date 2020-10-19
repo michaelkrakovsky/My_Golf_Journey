@@ -1,0 +1,2941 @@
+<html class="signed-in" lang="en"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Garmin Connect</title>
+
+    
+
+
+    
+
+    <link rel="shortcut icon" href="/modern/images/favicon.ico">
+
+    <!-- Connect Styles -->
+    
+        <link rel="stylesheet" type="text/css" href="/modern/css/dropzone.min.css?bust=4.36.0.17">
+        <link rel="stylesheet" type="text/css" href="/web-react/styles/global.css?bust=4.36.0.17">
+    
+    
+
+    <!-- to be modify the google fonts in cdn here -->
+    <!--garmin.cn-->
+
+    
+    
+        <!-- FONTS -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin,cyrillic-ext,greek-ext,vietnamese">
+    
+
+
+
+    <title>Connect</title>
+<link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/c418baca-c295-4ed4-9f1c-f3cf6bff46ff"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/5bc56476-a214-404b-b67c-c1fbc3929946"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/2e882c10-4d1e-40b8-b821-759b0b541fd4"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/d1527cf1-cd08-4695-a04b-09f44c4f49e1"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/efce9968-9406-4b86-ba42-7d8c709230d2"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/b3fc6ef5-f5a6-471f-a447-3243dea9dbda"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/83c36165-486c-470b-8635-f9a1ee8e6e5f"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/a0726dfd-848b-4b2a-9d04-d4315b1a9412"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/b84288da-d8c6-416e-b434-da71697ed5ec"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/dfeb8bd5-33b6-4dcb-8f96-b63e7e6b6ec3"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/e7f2e539-cc23-4bcb-ba96-e37f4ba8631b"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/79af851d-1a41-4118-8711-367e28ac8700"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/26b744c5-8f97-45b8-954a-7cdaa31eaa58"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/e622394e-68d5-4822-8c25-03c747fb3b96"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/fe084951-3635-4f98-b30d-11de7e2582c2"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/345e721c-c802-4d29-b100-73781429f0d0"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/f1a3ba3e-17f3-4093-b85d-470e69d792c1"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/dd4e4ecc-b973-4da6-bb79-2d9de7e7a99c"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/4ce2b76e-1182-4e37-aca4-bf609346ac95"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/4d1f4db3-583f-460d-b5d5-1c5c14099594"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/fcb233b4-8993-4c2c-ab16-48ba26755f03"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/baf1d95c-a2b7-46f5-a691-c9c34aecebb9"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/fd4011b9-9eef-49ee-8a1d-a1e94ad8949e"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/8a0720ce-6051-49b1-9b5e-d6680857b348"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/b4d5aecc-71e9-4113-9893-dd0c00724a48"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/dc350c28-d06b-4848-b6e2-c9544d1d47b6"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/8411bf0f-bcee-444d-9172-f918381ef824"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/70cf06e9-9ca8-41cc-ae54-8bf52de08994"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/7a329f2d-90db-4cd1-9a77-d0377f4df3c6"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/9f7f6a6e-2146-4325-b134-b58c1a54b238"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/2cd77523-82fd-4946-8bbd-b638dd72b584"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/d95c727c-a425-41cc-8465-80da82ca3a90"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/29a81a22-59be-4888-915f-a043817de3a2"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/95681bf6-e28d-4957-89ab-8b6252238d9b"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/1521b62b-3e7f-4acc-b051-559de479f4ea"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/2108fb5e-f99d-4a60-9d85-a3e66850be19"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/07748813-6f32-4bb6-8e84-dbe5d9e43c69"><script type="text/javascript" async="" src="https://www.google-analytics.com/gtm/js?id=GTM-NN6KRBF&amp;t=gprod&amp;cid=1893457171.1603071099"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" async="" charset="utf-8" id="tealium-tag-7110" src="https://www.google-analytics.com/analytics.js"></script><script charset="utf-8" src="/web-react/static/js/139.215566ec.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/140.4d447bf1.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/141.5d4b70d7.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/142.94a24418.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/143.da00b9c7.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/144.6af3ae65.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/145.028d75b7.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/146.0afc0aaa.chunk.js"></script><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/351191cc-ac11-4692-b2cc-d8ce4002ef92"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/1b9982ff-d9b7-4920-b547-0288cf058741"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/83063512-1123-4a6d-a088-9fa8117a2d76"><script charset="utf-8" src="/web-react/static/js/134.9852f706.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/135.5503a625.chunk.js"></script><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/b5926f5b-2af6-499d-8380-d0d05f1e5092"><script async="" src="https://tags.tiqcdn.com/utag/garmin/main/prod/utag.js"></script><script async="" src="https://sso.garmin.com/sso/js/gauth-widget.js"></script><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/f7d20399-9462-4c1a-9366-e9e6ef87c031"><script type="text/javascript" async="" charset="utf-8" id="utag_garmin.main_472" src="//tags.tiqcdn.com/utag/tiqapp/utag.currency.js?utv=ut4.44.202010151552"></script><script charset="utf-8" src="/web-react/static/js/80.3b88242b.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/111.ecead63a.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/124.87cdd985.chunk.js"></script><link rel="stylesheet" type="text/css" href="https://sso.garmin.com/sso/css/gauth-widget.css?20190903"><script charset="utf-8" src="/web-react/static/js/11.5c223894.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/247.95d86247.chunk.js"></script><script type="text/javascript" async="" charset="utf-8" id="utag_garmin.main_721" src="//tags.tiqcdn.com/utag/garmin/main/prod/utag.721.js?utv=ut4.44.202006301649"></script><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/fff6c9da-bfc9-4bf3-9309-f8b55ec52fc9"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/6b9b052f-5fdf-46d3-8794-c678405e6124"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/c0f6543c-f5e7-4d6d-ae8c-0f46a7589aaa"></head>
+
+
+<body style="" class="">
+<a href="connectagent://launch" id="notify-agent" style="display: none" tabindex="-1"><!-- dummy comment --></a>
+
+
+
+<div class="connect-container">
+
+    <nav class="main-nav"><a class="logo" href="/modern/" title="Garmin Connect"><!-- <span class="mobile-logo"></span> --></a>
+<div class="main-nav-list">
+    <ul class="main-nav-group dashboards">
+        <!-- Dashboards -->
+        <li class="main-nav-item js-dashboards"><a href="#" class="main-nav-menu-toggle main-nav-link">
+    <i class="nav-icon icon-dashboards"></i>
+    <span class="nav-text">Dashboards</span>
+    <i class="nav-toggle-icon icon-arrow-down"></i>
+</a>
+<ul class="main-nav-menu">
+<li class="main-nav-menu-item"><div class="inline-edit">
+    <a href="/modern/dashboard/55147972" class="main-nav-link inline-edit-target animated fadeIn" style="display: inline-block;">Activity Tracking</a>
+        <!-- READ MODE -->
+        <div class="dashboard-actions">
+            <button class="inline-edit-trigger" aria-label="Rename">
+                <i class="icon-pencil has-tooltip" data-html="true" title="" data-original-title="Rename"></i>
+            </button>
+            <button class="inline-edit-target js-delete-button" aria-label="Delete" style="display: inline-block;">
+                <i class="icon-trash has-tooltip" data-html="true" title="" data-original-title="Delete"></i>
+            </button>
+        </div>
+
+        <!-- EDIT MODE -->
+        <div class="inline-edit-editable" style="display: none;">
+            <div class="inline-edit-editable-text animated fadeIn" contenteditable="true">Activity Tracking</div>
+            <span class="inline-edit-actions">
+                <button class="inline-edit-save icon-checkmark has-tooltip" aria-label="Save" data-original-title="" title=""></button>
+                <button class="inline-edit-cancel icon-close has-tooltip" aria-label="Cancel" data-original-title="" title=""></button>
+            </span>
+        </div>
+</div></li><li class="main-nav-menu-item"><div class="inline-edit">
+    <a href="/modern/dashboard/55147973" class="main-nav-link inline-edit-target animated fadeIn" style="display: inline-block;">Golf</a>
+        <!-- READ MODE -->
+        <div class="dashboard-actions">
+            <button class="inline-edit-trigger" aria-label="Rename">
+                <i class="icon-pencil has-tooltip" data-html="true" title="" data-original-title="Rename"></i>
+            </button>
+            <button class="inline-edit-target js-delete-button" aria-label="Delete" style="display: inline-block;">
+                <i class="icon-trash has-tooltip" data-html="true" title="" data-original-title="Delete"></i>
+            </button>
+        </div>
+
+        <!-- EDIT MODE -->
+        <div class="inline-edit-editable" style="display: none;">
+            <div class="inline-edit-editable-text animated fadeIn" contenteditable="true">Golf</div>
+            <span class="inline-edit-actions">
+                <button class="inline-edit-save icon-checkmark has-tooltip" aria-label="Save" data-original-title="" title=""></button>
+                <button class="inline-edit-cancel icon-close has-tooltip" aria-label="Cancel" data-original-title="" title=""></button>
+            </span>
+        </div>
+</div></li><li class="js-add-dashboard-button">
+    <button class="js-add-dashboard add-dashboard js-add-available">Add Dashboard</button>
+    <button class="add-dashboard js-add-unavailable max" title="You've been busy. Max dashboards have been added." aria-disabled="true" data-rel="tooltip" data-html="true" data-original-title="You've been busy. Max dashboards have been added." aria-label="You've been busy. Max dashboards have been added." data-placement="top" style="display: none;">Add Dashboard</button>
+</li>
+</ul></li>
+    <li class="main-nav-item"><a href="/modern/daily-summary/2020-10-18" class="main-nav-link">
+    <i class="nav-icon icon-layers"></i>
+    <span class="nav-text">Daily Summary</span>
+    
+</a>
+
+</li><li class="main-nav-item"><a href="/modern/challenge" class="main-nav-link">
+    <i class="nav-icon icon-challenges"></i>
+    <span class="nav-text">Challenges</span>
+    
+</a>
+
+</li><li class="main-nav-item"><a href="/modern/calendar" class="main-nav-link">
+    <i class="nav-icon icon-calendar"></i>
+    <span class="nav-text">Calendar</span>
+    
+</a>
+
+</li><li class="main-nav-item"><a href="/modern/connections" class="main-nav-link">
+    <i class="nav-icon icon-newsfeed"></i>
+    <span class="nav-text">News Feed</span>
+    
+</a>
+
+</li></ul>
+
+    
+        <ul class="main-nav-group main">
+        <li class="main-nav-item"><a href="" class="main-nav-link main-nav-menu-toggle">
+    <i class="nav-icon icon-activities"></i>
+    <span class="nav-text">Activities</span>
+    
+        <i class="nav-toggle-icon icon-arrow-down"></i>
+    
+</a>
+
+    <ul class="main-nav-menu">
+    <li class="main-nav-menu-item"><a href="/modern/activities" class="main-nav-link">All Activities</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-18/steps" class="main-nav-link">Steps</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-18/floors" class="main-nav-link">Floors</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-18/intensityMinutes" class="main-nav-link">Intensity Minutes</a></li></ul>
+
+</li><li class="main-nav-item"><a href="" class="main-nav-link main-nav-menu-toggle">
+    <i class="nav-icon icon-heart"></i>
+    <span class="nav-text">Health Stats</span>
+    
+        <i class="nav-toggle-icon icon-arrow-down"></i>
+    
+</a>
+
+    <ul class="main-nav-menu">
+    <li class="main-nav-menu-item"><a href="/modern/sleep/2020-10-18" class="main-nav-link">Sleep</a></li><li class="main-nav-menu-item"><a href="/modern/weight" class="main-nav-link">Weight</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-18/hydration" class="main-nav-link">Hydration</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-18/calories" class="main-nav-link">Calories In/Out</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-18/heartRate" class="main-nav-link">Heart Rate</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-18/stress" class="main-nav-link">Stress</a></li></ul>
+
+</li><li class="main-nav-item"><a href="" class="main-nav-link main-nav-menu-toggle active">
+    <i class="nav-icon icon-activity-golf"></i>
+    <span class="nav-text">Golf</span>
+    
+        <i class="nav-toggle-icon icon-arrow-down"></i>
+    
+</a>
+
+    <ul class="main-nav-menu">
+    <li class="main-nav-menu-item active"><a href="/modern/my-scorecards" class="main-nav-link">Scorecards</a></li><li class="main-nav-menu-item"><a href="/modern/golf-stats" class="main-nav-link">Performance Stats</a></li><li class="main-nav-menu-item"><a href="/modern/my-golf-courses" class="main-nav-link">Course Stats</a></li><li class="main-nav-menu-item"><a href="/modern/golf-leaderboards" class="main-nav-link">Leaderboards</a></li><li class="main-nav-menu-item"><a href="/modern/my-swings" class="main-nav-link">Swing Analysis</a></li></ul>
+
+</li><li class="main-nav-item"><a href="" class="main-nav-link main-nav-menu-toggle">
+    <i class="nav-icon icon-workouts"></i>
+    <span class="nav-text">Training</span>
+    
+        <i class="nav-toggle-icon icon-arrow-down"></i>
+    
+</a>
+
+    <ul class="main-nav-menu">
+    <li class="main-nav-menu-item"><a href="/modern/workouts" class="main-nav-link">Workout</a></li></ul>
+
+</li><li class="main-nav-item"><a href="/modern/gear" class="main-nav-link">
+    <i class="nav-icon icon-steps"></i>
+    <span class="nav-text">Gear</span>
+    
+</a>
+
+</li><li class="main-nav-item"><a href="/modern/insights" class="main-nav-link">
+    <i class="nav-icon icon-insights"></i>
+    <span class="nav-text">Insights</span>
+    
+</a>
+
+</li><li class="main-nav-item"><a href="/modern/report" class="main-nav-link">
+    <i class="nav-icon icon-reports-bar"></i>
+    <span class="nav-text">Reports</span>
+    
+</a>
+
+</li></ul>
+    
+
+    
+        <ul class="main-nav-group social">
+        <li class="main-nav-item"><a href="/modern/connections/connections" class="main-nav-link">
+    <i class="nav-icon icon-people-2"></i>
+    <span class="nav-text">Connections</span>
+    
+</a>
+
+</li><li class="main-nav-item"><a href="/modern/groups" class="main-nav-link">
+    <i class="nav-icon icon-people-3"></i>
+    <span class="nav-text">Groups</span>
+    
+</a>
+
+</li></ul>
+    
+
+    
+        <ul class="main-nav-group other">
+        <li class="main-nav-item"><a href="/modern/badges" class="main-nav-link">
+    <i class="nav-icon icon-badges-new"></i>
+    <span class="nav-text">Badges</span>
+    
+</a>
+
+</li><li class="main-nav-item"><a href="/modern/personal-records" class="main-nav-link">
+    <i class="nav-icon icon-personal-records"></i>
+    <span class="nav-text">Personal Records</span>
+    
+</a>
+
+</li><li class="main-nav-item"><a href="/modern/goals" class="main-nav-link">
+    <i class="nav-icon icon-goals"></i>
+    <span class="nav-text">Goals</span>
+    
+</a>
+
+</li></ul>
+    
+
+    
+
+    
+    <span class="empty-for-empty-react-component"></span>
+</div></nav><div class="nav-widgets-container"><nav class="nav-widgets">
+    <header class="nav-widgets-header">
+        <h3>Add to Dashboard</h3>
+        <p>Select an item below to add it to your dashboard.</p>
+    </header>
+    <ul class="nav-widgets-list"><li><a href="/modern/activities" class="widget-add" title="Activities" data-widget-definition-id="1">Activities</a></li><li><a href="/modern/trophy-case" class="widget-add" title="Badges" data-widget-definition-id="12">Badges</a></li><li><a href="/modern/dailySummary/body-battery" class="widget-add" title="Body Battery" data-widget-definition-id="281">Body Battery</a></li><li><a href="/modern/dailySummary/calories" class="widget-add" title="Calories In/Out" data-widget-definition-id="34">Calories In/Out</a></li><li><a href="/modern/challenge" class="widget-add" title="Challenges" data-widget-definition-id="33">Challenges</a></li><li><a href="/modern/connections" class="widget-add" title="Connections" data-widget-definition-id="7">Connections</a></li><li><a href="/modern/my-golf-courses" class="widget-add" title="Course Stats" data-widget-definition-id="22">Course Stats</a></li><li><a href="/modern/devices" class="widget-add" title="Devices" data-widget-definition-id="5">Devices</a></li><li><a href="/modern/dailySummary/timeline" class="widget-add" title="Floors Climbed" data-widget-definition-id="163">Floors Climbed</a></li><li><a href="/modern/gear" class="widget-add" title="Gear" data-widget-definition-id="81">Gear</a></li><li><a href="/modern/groups" class="widget-add" title="Groups" data-widget-definition-id="28">Groups</a></li><li><a href="/modern/dailySummary/timeline" class="widget-add" title="Heart Rate" data-widget-definition-id="161">Heart Rate</a></li><li><a href="/modern/dailySummary/hydration" class="widget-add" title="Hydration" data-widget-definition-id="321">Hydration</a></li><li><a href="/modern/insights" class="widget-add" title="Insights" data-widget-definition-id="181">Insights</a></li><li><a href="/modern/dailySummary/intensity-minutes" class="widget-add" title="Intensity Minutes" data-widget-definition-id="162">Intensity Minutes</a></li><li><a href="/modern/my-golf-leaderboards" class="widget-add" title="Leaderboards" data-widget-definition-id="241">Leaderboards</a></li><li><a href="/modern" class="widget-add" title="Performance Stats" data-widget-definition-id="23">Performance Stats</a></li><li><a href="/modern/trophy-case" class="widget-add" title="Personal Records" data-widget-definition-id="26">Personal Records</a></li><li><a href="/modern/report" class="widget-add" title="Reports" data-widget-definition-id="14">Reports</a></li><li><a href="/modern/my-scorecards" class="widget-add" title="Scorecards" data-widget-definition-id="21">Scorecards</a></li><li><a href="/modern/dailySummary/sleep" class="widget-add" title="Sleep" data-widget-definition-id="101">Sleep</a></li><li><a href="/modern/solarIntensity" class="widget-add" title="Solar Intensity" data-widget-definition-id="347">Solar Intensity</a></li><li><a href="/modern/dailySummary/steps" class="widget-add" title="Steps" data-widget-definition-id="9">Steps</a></li><li><a href="/modern/dailySummary/stress" class="widget-add" title="Stress" data-widget-definition-id="221">Stress</a></li><li><a href="/modern/my-swings" class="widget-add" title="Swing Analysis" data-widget-definition-id="102">Swing Analysis</a></li><li><a href="/modern/weight" class="widget-add" title="Weight" data-widget-definition-id="25">Weight</a></li><li><a href="/modern/workouts" class="widget-add" title="Workouts" data-widget-definition-id="29">Workouts</a></li></ul>
+    <footer class="nav-widgets-footer">
+        <div class="nav-widgets-cancel">Cancel</div>
+    </footer>
+</nav></div>
+
+    <div class="react-global-modal"><div></div></div>
+
+    <div class="main-body">
+        <!-- Header -->
+        
+
+    <header class="header"><div class="header-controls">
+    <div class="main-nav-toggle">
+        <i class="icon-arrow-left" aria-label="Toggle Menu"></i>
+        <i class="icon-menu" aria-label="Menu"></i>
+    </div>
+    <a class="logo" href="/modern/" title="Garmin Connect"></a>
+</div>
+
+<div class="header-nav">
+
+    <div class="header-nav-item upload-import">
+        <a href="#" class="header-nav-link icon-activity-upload" aria-label="Upload or Import Activity" data-rel="tooltip" data-html="true" data-original-title="Upload or Import Activity" data-placement="bottom"></a>
+        <div class="header-nav-menu">
+            <div class="header-nav-menu-section">
+                <ul>
+                    <li><a href="/modern/activity-sync" class="colored js-how-to-sync">How to sync</a></li>
+                    <li><a href="/modern/import-data" class="colored js-import-data">Import Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-nav-item notifications">
+        <a href="#" class="header-nav-link icon-inbox" aria-label="Requests &amp; Notifications" data-rel="tooltip" data-html="true" data-original-title="Requests &amp; Notifications" data-placement="bottom">
+            <span class="new-items-alert hide" style="display: none;"></span>
+        </a>
+        <div class="header-nav-menu"><div class="alert alert-error hide">
+    <p>We were unable to process your request. Please try again later.</p>
+</div>
+
+<div class="notifications-skeletons">
+    <div class="skeleton-item skeleton-request clearfix">
+        <div class="skeleton-object skeleton-avatar"></div>
+        <div class="skeleton-object skeleton-text"></div>
+        <div class="skeleton-object skeleton-button"></div>
+        <div class="skeleton-object skeleton-button"></div>
+    </div>
+    <div class="skeleton-item skeleton-request clearfix">
+        <div class="skeleton-object skeleton-avatar"></div>
+        <div class="skeleton-object skeleton-text"></div>
+        <div class="skeleton-object skeleton-button"></div>
+        <div class="skeleton-object skeleton-button"></div>
+    </div>
+    <div class="skeleton-item skeleton-notification">
+        <div class="skeleton-object skeleton-text"></div>
+        <div class="skeleton-object skeleton-text"></div>
+        <div class="skeleton-object skeleton-date"></div>
+    </div>
+    <div class="skeleton-item skeleton-notification">
+        <div class="skeleton-object skeleton-text"></div>
+        <div class="skeleton-object skeleton-text"></div>
+        <div class="skeleton-object skeleton-date"></div>
+    </div>
+    <div class="skeleton-item skeleton-notification">
+        <div class="skeleton-object skeleton-text"></div>
+        <div class="skeleton-object skeleton-text"></div>
+        <div class="skeleton-object skeleton-date"></div>
+    </div>
+</div>
+
+
+</div>
+    </div>
+
+    <div class="header-nav-item device-sync">
+        <a href="#" class="header-nav-link icon-devices" aria-label="Devices &amp; Sync Status" data-rel="tooltip" data-html="true" data-original-title="Devices &amp; Sync Status" data-placement="bottom">
+            <span class="new-items-alert hide" style="display: inline;"></span>
+        </a>
+        <div class="header-nav-menu"><div id="queueNotification-error" class="alert alert-error hide">
+    <p>We were unable to process your request. Please try again later.</p>
+</div>
+
+    <div class="header-nav-menu-section section-header">
+        <h2 class="section-name">Devices</h2>
+        <a href="/modern/activity-sync" class="colored how-to-sync js-how-to-sync">How to sync</a>
+    </div>
+<div class="header-nav-menu-section"><div class="device">
+    <a href="/modern/device/3975636494" class="js-device-link"><img class="device-image" src="https://static.garmincdn.com/com.garmin.connect/content/images/device-images/approach-x40.png" alt="Approach X40"></a>
+
+    <div class="device-details">
+        <div class="device-name"><a href="/modern/device/3975636494" class="js-device-link">Approach X40</a></div>
+
+        
+
+        
+
+        <div class="device-link preferred js-set-as-activity-tracker" style="display: none;"><a href="#" class="colored">Set as Preferred Activity Tracker</a></div>
+        <div class="device-link preferred js-active-activity-tracker" style="display: none;"><i class="icon-checkmark"></i> Preferred Activity Tracker</div>
+
+        <div class="device-link settings"><a href="/modern/device/3975636494" class="colored js-device-link">Device Settings</a></div>
+
+        
+        
+    </div>
+
+    
+    <div class="new-items-alert" title="4 Items to Sync">4</div>
+    
+</div>
+
+
+<div class="sync-item-remove-confirm" style="display: none;">
+    <div class="confirm-text"></div>
+    <div class="confirm-buttons">
+        <button class="btn btn-small btn-secondary btn-keep">Keep</button>
+        <button class="btn btn-small btn-danger btn-confirm">Remove</button>
+    </div>
+</div>
+
+
+
+<div class="sync-list hide">
+    <div class="device-sync-info">
+            Last sync: Wednesday, Aug 19 at 11:15 PM. The following items will be sent to your device when you sync.
+    </div>
+
+    
+    
+    
+
+    
+    
+    <div class="sync-item sync-item-15385700044">
+        <div class="sync-item-content">
+            <a class="sync-item-title" href="#">Golf Club</a>
+            <span class="sync-item-heading"></span>
+            
+
+            
+                <a href="#" class="sync-item-remove icon-close" title="Remove" data-message-id="15385700044" data-message-name="Golf Club" data-group-name=""></a>
+            
+
+            
+        </div>
+    </div>
+            
+    
+
+
+    
+    
+    
+
+    
+    
+    <div class="sync-item sync-item-15448392915">
+        <div class="sync-item-content">
+            <a class="sync-item-title" href="/modern/device/3975636494">User Settings</a>
+            <span class="sync-item-heading"></span>
+            
+
+            
+                <a href="#" class="sync-item-remove icon-close" title="Remove" data-message-id="15448392915" data-message-name="User Settings" data-group-name=""></a>
+            
+
+            
+        </div>
+    </div>
+            
+    
+
+
+    
+    
+    
+
+    
+    
+    <div class="sync-item sync-item-15448392916">
+        <div class="sync-item-content">
+            <a class="sync-item-title" href="/modern/device/3975636494">User Settings</a>
+            <span class="sync-item-heading"></span>
+            
+
+            
+                <a href="#" class="sync-item-remove icon-close" title="Remove" data-message-id="15448392916" data-message-name="User Settings" data-group-name=""></a>
+            
+
+            
+        </div>
+    </div>
+            
+    
+
+
+    
+    
+    
+
+    
+    
+    <div class="sync-item sync-item-16110483463">
+        <div class="sync-item-content">
+            <a class="sync-item-title" href="/modern/device/3975636494">User Settings</a>
+            <span class="sync-item-heading"></span>
+            
+
+            
+                <a href="#" class="sync-item-remove icon-close" title="Remove" data-message-id="16110483463" data-message-name="User Settings" data-group-name=""></a>
+            
+
+            
+        </div>
+    </div>
+            
+    
+
+
+</div>
+</div></div>
+    </div>
+
+    <div class="header-nav-item user-profile">
+        <a href="/modern/profile/433ae1d7-ba04-4209-bfa4-4814c426397d" class="header-nav-link" data-rel="tooltip" data-html="true" data-original-title="Profile &amp; Account" aria-label="Profile &amp; Account" data-placement="bottom">
+            <img class="avatar" alt="Michael Krakovsky" src="https://s3.amazonaws.com/garmin-connect-prod/profile_images/8161df31-8644-4ea8-adb7-60a151536881-73522608.png">
+        </a>
+        <div class="header-nav-menu"><div class="header-nav-menu-section">
+    <div class="full-name h5">
+        
+        Michael Krakovsky
+    </div>
+    <a href="/modern/profile/433ae1d7-ba04-4209-bfa4-4814c426397d" class="colored view-profile">View Profile</a>
+</div>
+
+<div class="header-nav-menu-section">
+    <ul>
+        <li><a href="/modern/settings" class="colored account-settings">Account Settings</a></li>
+    </ul>
+</div>
+
+<div class="header-nav-menu-section">
+    <ul>
+        <li><a href="/en-US/help" class="colored">Help</a></li>
+        <li><a href="#" class="sign-out colored">Sign Out</a></li>
+    </ul>
+</div></div>
+    </div>
+
+</div></header>
+
+    <section class="beta-testers-survey-banner takeover-container">
+        <!-- placeholder -->
+    </section>
+
+
+<div class="main-header"></div>
+
+
+        <!-- Content Container -->
+        
+<div class="content page"><div class="system-message-container"></div><div class="page-message-container"><div class="alert alert-error" style="display:none;">
+    <span class="alert-text"></span>
+
+    
+</div>
+
+<div class="alert alert-success" style="display:none;">
+    <span class="alert-text"></span>
+
+    
+</div>
+
+<div class="alert alert-info" style="display:none;">
+    <span class="alert-text"></span>
+
+    <button type="button" class="close" aria-label="Close">×</button>
+</div>
+</div>
+<div id="pageContainer" class="container">
+    <style type="text/css">
+        body.wait,
+        body.wait * {
+            cursor: wait !important;
+        }
+    </style>
+<div><div class="scorecard-list full-page">
+
+    <div class="scorecard-list-heading page-intro">
+
+        <!-- OwnerHeaderView.html -->
+
+    <h1 class="page-feature"><div class="pull-left activity-detail-title">
+    
+        Scorecards
+    
+    by
+    <a href="/modern/profile/433ae1d7-ba04-4209-bfa4-4814c426397d" class="colored">
+        Michael Krakovsky
+        
+            <img role="presentation" class="avatar avatar-xsmall" src="https://s3.amazonaws.com/garmin-connect-prod/profile_images/278be095-cf50-4983-8540-6e2719002ac2-73522608.png">
+        
+    </a>
+</div></h1></div>
+
+    
+
+    <table class="table">
+        <tbody>
+
+        <tr><td class="info">
+    <a href="/modern/scorecard/165949754" class="scorecard-link" data-scorecard-id="165949754">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Oct 18, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>81</span>
+    
+        <span class="par-score">+10</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/165869942" class="scorecard-link" data-scorecard-id="165869942">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Oct 17, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>79</span>
+    
+        <span class="par-score">+8</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/165787222" class="scorecard-link" data-scorecard-id="165787222">
+        <span class="nowrap" title="Glendale Golf &amp; Country Club">Glendale Golf &amp; Country Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Oct 16, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>93</span>
+    
+        <span class="par-score">+21</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/165350026" class="scorecard-link" data-scorecard-id="165350026">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Monday, Oct 12, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>79</span>
+    
+        <span class="par-score">+8</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/164952961" class="scorecard-link" data-scorecard-id="164952961">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Oct 11, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>78</span>
+    
+        <span class="par-score">+7</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/164407971" class="scorecard-link" data-scorecard-id="164407971">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Oct 10, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>75</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/163843741" class="scorecard-link" data-scorecard-id="163843741">
+        <span class="nowrap" title="The Country Club ~ South">The Country Club ~ South</span>
+    </a>
+
+    <br>
+    <span class="data-label">Thursday, Oct 8, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>30</span>
+    
+        <span class="par-score">E</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/161976106" class="scorecard-link" data-scorecard-id="161976106">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Oct 3, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/161730016" class="scorecard-link" data-scorecard-id="161730016">
+        <span class="nowrap" title="The Country Club ~ South">The Country Club ~ South</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Oct 2, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>29</span>
+    
+        <span class="par-score">-1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/161324121" class="scorecard-link" data-scorecard-id="161324121">
+        <span class="nowrap" title="The Country Club ~ South">The Country Club ~ South</span>
+    </a>
+
+    <br>
+    <span class="data-label">Thursday, Oct 1, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>34</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/159985351" class="scorecard-link" data-scorecard-id="159985351">
+        <span class="nowrap" title="The Country Club ~ West">The Country Club ~ West</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Sep 27, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>79</span>
+    
+        <span class="par-score">+8</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/158184036" class="scorecard-link" data-scorecard-id="158184036">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Sep 23, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/157880111" class="scorecard-link" data-scorecard-id="157880111">
+        <span class="nowrap" title="The Country Club ~ South">The Country Club ~ South</span>
+    </a>
+
+    <br>
+    <span class="data-label">Tuesday, Sep 22, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>31</span>
+    
+        <span class="par-score">+1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/156919846" class="scorecard-link" data-scorecard-id="156919846">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Sep 20, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>73</span>
+    
+        <span class="par-score">+2</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/156376506" class="scorecard-link" data-scorecard-id="156376506">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Sep 19, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/155883951" class="scorecard-link" data-scorecard-id="155883951">
+        <span class="nowrap" title="Diamondback Golf Club">Diamondback Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Sep 18, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>82</span>
+    
+        <span class="par-score">+10</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/155069236" class="scorecard-link" data-scorecard-id="155069236">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Sep 16, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/153725966" class="scorecard-link" data-scorecard-id="153725966">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Sep 13, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>77</span>
+    
+        <span class="par-score">+6</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/153151346" class="scorecard-link" data-scorecard-id="153151346">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Sep 12, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>78</span>
+    
+        <span class="par-score">+7</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/151983911" class="scorecard-link" data-scorecard-id="151983911">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Sep 9, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>78</span>
+    
+        <span class="par-score">+7</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/142637861" class="scorecard-link" data-scorecard-id="142637861">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Aug 19, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>71</span>
+    
+        <span class="par-score">E</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/141408691" class="scorecard-link" data-scorecard-id="141408691">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Aug 16, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>70</span>
+    
+        <span class="par-score">-1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/140661566" class="scorecard-link" data-scorecard-id="140661566">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Aug 15, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>72</span>
+    
+        <span class="par-score">+1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/140314391" class="scorecard-link" data-scorecard-id="140314391">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Aug 14, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/139344171" class="scorecard-link" data-scorecard-id="139344171">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Aug 12, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/138486496" class="scorecard-link" data-scorecard-id="138486496">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Monday, Aug 10, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/138001481" class="scorecard-link" data-scorecard-id="138001481">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Aug 9, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>75</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/137347711" class="scorecard-link" data-scorecard-id="137347711">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Aug 8, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>73</span>
+    
+        <span class="par-score">+2</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/136678546" class="scorecard-link" data-scorecard-id="136678546">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Aug 7, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>72</span>
+    
+        <span class="par-score">+1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/135906616" class="scorecard-link" data-scorecard-id="135906616">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Aug 5, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>72</span>
+    
+        <span class="par-score">+1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/135027576" class="scorecard-link" data-scorecard-id="135027576">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Monday, Aug 3, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>75</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/133728861" class="scorecard-link" data-scorecard-id="133728861">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Aug 1, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>81</span>
+    
+        <span class="par-score">+10</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/133728806" class="scorecard-link" data-scorecard-id="133728806">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Jul 31, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>76</span>
+    
+        <span class="par-score">+5</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/132149366" class="scorecard-link" data-scorecard-id="132149366">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Jul 29, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/131017581" class="scorecard-link" data-scorecard-id="131017581">
+        <span class="nowrap" title="Glencairn Golf Club ~ Speyside/Scotch Block">Glencairn Golf Club ~ Speyside/Scotch Block</span>
+    </a>
+
+    <br>
+    <span class="data-label">Monday, Jul 27, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>78</span>
+    
+        <span class="par-score">+6</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/131017546" class="scorecard-link" data-scorecard-id="131017546">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jul 26, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>69</span>
+    
+        <span class="par-score">-2</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/131017516" class="scorecard-link" data-scorecard-id="131017516">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jul 26, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>73</span>
+    
+        <span class="par-score">+2</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/131017466" class="scorecard-link" data-scorecard-id="131017466">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Jul 25, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>76</span>
+    
+        <span class="par-score">+5</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/131017426" class="scorecard-link" data-scorecard-id="131017426">
+        <span class="nowrap" title="Heron Point Golf Links">Heron Point Golf Links</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Jul 24, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>83</span>
+    
+        <span class="par-score">+12</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/128951006" class="scorecard-link" data-scorecard-id="128951006">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jul 19, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>50</span>
+    
+        <span class="par-score">+2</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/128950996" class="scorecard-link" data-scorecard-id="128950996">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Jul 17, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/128950961" class="scorecard-link" data-scorecard-id="128950961">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Jul 15, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>81</span>
+    
+        <span class="par-score">+10</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/125603801" class="scorecard-link" data-scorecard-id="125603801">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jul 12, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>70</span>
+    
+        <span class="par-score">-1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/125070606" class="scorecard-link" data-scorecard-id="125070606">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Jul 11, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>76</span>
+    
+        <span class="par-score">+5</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/125070561" class="scorecard-link" data-scorecard-id="125070561">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Jul 10, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>81</span>
+    
+        <span class="par-score">+10</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/125070496" class="scorecard-link" data-scorecard-id="125070496">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Jul 8, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>72</span>
+    
+        <span class="par-score">+1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/125070456" class="scorecard-link" data-scorecard-id="125070456">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jul 5, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/125070411" class="scorecard-link" data-scorecard-id="125070411">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Jul 3, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>76</span>
+    
+        <span class="par-score">+5</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/125070361" class="scorecard-link" data-scorecard-id="125070361">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Thursday, Jul 2, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>73</span>
+    
+        <span class="par-score">+2</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/125069921" class="scorecard-link" data-scorecard-id="125069921">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Jul 1, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>77</span>
+    
+        <span class="par-score">+6</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/119524546" class="scorecard-link" data-scorecard-id="119524546">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jun 28, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/119019571" class="scorecard-link" data-scorecard-id="119019571">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Jun 27, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>75</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/119019531" class="scorecard-link" data-scorecard-id="119019531">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Jun 26, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>76</span>
+    
+        <span class="par-score">+5</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/117791306" class="scorecard-link" data-scorecard-id="117791306">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Jun 24, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>78</span>
+    
+        <span class="par-score">+7</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/116407666" class="scorecard-link" data-scorecard-id="116407666">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jun 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>79</span>
+    
+        <span class="par-score">+8</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/115554956" class="scorecard-link" data-scorecard-id="115554956">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Jun 19, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/114701551" class="scorecard-link" data-scorecard-id="114701551">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Jun 17, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>72</span>
+    
+        <span class="par-score">+1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/113336916" class="scorecard-link" data-scorecard-id="113336916">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jun 14, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>79</span>
+    
+        <span class="par-score">+8</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/112868361" class="scorecard-link" data-scorecard-id="112868361">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Jun 13, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>81</span>
+    
+        <span class="par-score">+10</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/112868321" class="scorecard-link" data-scorecard-id="112868321">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Jun 12, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>77</span>
+    
+        <span class="par-score">+6</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/111666571" class="scorecard-link" data-scorecard-id="111666571">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Jun 10, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>78</span>
+    
+        <span class="par-score">+7</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/110488136" class="scorecard-link" data-scorecard-id="110488136">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jun 7, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>80</span>
+    
+        <span class="par-score">+9</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/109857391" class="scorecard-link" data-scorecard-id="109857391">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Jun 6, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>71</span>
+    
+        <span class="par-score">E</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/109857321" class="scorecard-link" data-scorecard-id="109857321">
+        <span class="nowrap" title="National Pines Golf Club">National Pines Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Jun 5, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>86</span>
+    
+        <span class="par-score">+14</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/109857226" class="scorecard-link" data-scorecard-id="109857226">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Thursday, Jun 4, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>80</span>
+    
+        <span class="par-score">+9</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/108816201" class="scorecard-link" data-scorecard-id="108816201">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Jun 3, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/108668461" class="scorecard-link" data-scorecard-id="108668461">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Jun 3, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>71</span>
+    
+        <span class="par-score">E</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/108364366" class="scorecard-link" data-scorecard-id="108364366">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Tuesday, Jun 2, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/108044676" class="scorecard-link" data-scorecard-id="108044676">
+        <span class="nowrap" title="Diamondback Golf Club">Diamondback Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Monday, Jun 1, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>81</span>
+    
+        <span class="par-score">+9</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/107593336" class="scorecard-link" data-scorecard-id="107593336">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, May 31, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>82</span>
+    
+        <span class="par-score">+11</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/107593191" class="scorecard-link" data-scorecard-id="107593191">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, May 31, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>78</span>
+    
+        <span class="par-score">+7</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/107136306" class="scorecard-link" data-scorecard-id="107136306">
+        <span class="nowrap" title="The Country Club ~ East">The Country Club ~ East</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, May 30, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>81</span>
+    
+        <span class="par-score">+10</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/106640051" class="scorecard-link" data-scorecard-id="106640051">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, May 29, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>82</span>
+    
+        <span class="par-score">+11</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/106640021" class="scorecard-link" data-scorecard-id="106640021">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, May 27, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>79</span>
+    
+        <span class="par-score">+8</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/104645406" class="scorecard-link" data-scorecard-id="104645406">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, May 24, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>75</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/104641046" class="scorecard-link" data-scorecard-id="104641046">
+        <span class="nowrap" title="The Country Club ~ West">The Country Club ~ West</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, May 23, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>83</span>
+    
+        <span class="par-score">+12</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/104115906" class="scorecard-link" data-scorecard-id="104115906">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, May 22, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>72</span>
+    
+        <span class="par-score">+1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/104115841" class="scorecard-link" data-scorecard-id="104115841">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Thursday, May 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>77</span>
+    
+        <span class="par-score">+6</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/104115771" class="scorecard-link" data-scorecard-id="104115771">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Monday, May 18, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>81</span>
+    
+        <span class="par-score">+10</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/104115696" class="scorecard-link" data-scorecard-id="104115696">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, May 17, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>78</span>
+    
+        <span class="par-score">+7</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/104115626" class="scorecard-link" data-scorecard-id="104115626">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, May 16, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>85</span>
+    
+        <span class="par-score">+14</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/104115531" class="scorecard-link" data-scorecard-id="104115531">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, May 16, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>83</span>
+    
+        <span class="par-score">+12</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/74495066" class="scorecard-link" data-scorecard-id="74495066">
+        <span class="nowrap" title="The Country Club ~ East">The Country Club ~ East</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Nov 2, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>75</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/74495051" class="scorecard-link" data-scorecard-id="74495051">
+        <span class="nowrap" title="The Country Club ~ West">The Country Club ~ West</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Oct 27, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>85</span>
+    
+        <span class="par-score">+14</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/74495046" class="scorecard-link" data-scorecard-id="74495046">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Oct 26, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>76</span>
+    
+        <span class="par-score">+5</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/72513446" class="scorecard-link" data-scorecard-id="72513446">
+        <span class="nowrap" title="National Pines Golf Club">National Pines Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Oct 20, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>81</span>
+    
+        <span class="par-score">+9</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/72513426" class="scorecard-link" data-scorecard-id="72513426">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Oct 19, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>87</span>
+    
+        <span class="par-score">+16</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/72513411" class="scorecard-link" data-scorecard-id="72513411">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Monday, Oct 14, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>80</span>
+    
+        <span class="par-score">+9</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/72513396" class="scorecard-link" data-scorecard-id="72513396">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Oct 13, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>73</span>
+    
+        <span class="par-score">+2</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/72513366" class="scorecard-link" data-scorecard-id="72513366">
+        <span class="nowrap" title="Summit Golf Club">Summit Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Oct 6, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>81</span>
+    
+        <span class="par-score">+10</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/69885951" class="scorecard-link" data-scorecard-id="69885951">
+        <span class="nowrap" title="Rattlesnake Point Golf Club ~ Copperhead">Rattlesnake Point Golf Club ~ Copperhead</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Oct 5, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>84</span>
+    
+        <span class="par-score">+12</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/69885926" class="scorecard-link" data-scorecard-id="69885926">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Sep 29, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>80</span>
+    
+        <span class="par-score">+9</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/69885896" class="scorecard-link" data-scorecard-id="69885896">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Sep 28, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>72</span>
+    
+        <span class="par-score">+1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/67389691" class="scorecard-link" data-scorecard-id="67389691">
+        <span class="nowrap" title="The Country Club ~ West">The Country Club ~ West</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Sep 22, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>76</span>
+    
+        <span class="par-score">+5</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/67389686" class="scorecard-link" data-scorecard-id="67389686">
+        <span class="nowrap" title="The Country Club ~ West">The Country Club ~ West</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Sep 21, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>75</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/66999316" class="scorecard-link" data-scorecard-id="66999316">
+        <span class="nowrap" title="The Country Club ~ East">The Country Club ~ East</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Sep 15, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>81</span>
+    
+        <span class="par-score">+10</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/66999291" class="scorecard-link" data-scorecard-id="66999291">
+        <span class="nowrap" title="King's Riding Golf Club">King's Riding Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Sep 14, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>82</span>
+    
+        <span class="par-score">+11</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/66999261" class="scorecard-link" data-scorecard-id="66999261">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Sep 8, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/62691346" class="scorecard-link" data-scorecard-id="62691346">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Monday, Sep 2, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>71</span>
+    
+        <span class="par-score">E</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/62691341" class="scorecard-link" data-scorecard-id="62691341">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Monday, Sep 2, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>69</span>
+    
+        <span class="par-score">-2</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/62389841" class="scorecard-link" data-scorecard-id="62389841">
+        <span class="nowrap" title="Glen Abbey Golf Club">Glen Abbey Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Sep 1, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>82</span>
+    
+        <span class="par-score">+9</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/62389831" class="scorecard-link" data-scorecard-id="62389831">
+        <span class="nowrap" title="Cardinal Golf Club ~ West Wing">Cardinal Golf Club ~ West Wing</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Aug 31, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>77</span>
+    
+        <span class="par-score">+6</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/62389801" class="scorecard-link" data-scorecard-id="62389801">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Aug 25, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>80</span>
+    
+        <span class="par-score">+9</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/56953651" class="scorecard-link" data-scorecard-id="56953651">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Aug 11, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>73</span>
+    
+        <span class="par-score">+2</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/56953631" class="scorecard-link" data-scorecard-id="56953631">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Aug 10, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>75</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/56953611" class="scorecard-link" data-scorecard-id="56953611">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, Aug 9, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>79</span>
+    
+        <span class="par-score">+8</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/55430921" class="scorecard-link" data-scorecard-id="55430921">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Monday, Aug 5, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>73</span>
+    
+        <span class="par-score">+2</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/55430896" class="scorecard-link" data-scorecard-id="55430896">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Monday, Aug 5, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>78</span>
+    
+        <span class="par-score">+7</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/55147911" class="scorecard-link" data-scorecard-id="55147911">
+        <span class="nowrap" title="Blue Springs Golf Club">Blue Springs Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Aug 4, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>80</span>
+    
+        <span class="par-score">+8</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/55029611" class="scorecard-link" data-scorecard-id="55029611">
+        <span class="nowrap" title="The Country Club ~ West">The Country Club ~ West</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jul 28, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>80</span>
+    
+        <span class="par-score">+9</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/55029596" class="scorecard-link" data-scorecard-id="55029596">
+        <span class="nowrap" title="Glencairn Golf Club ~ Speyside/Scotch Block">Glencairn Golf Club ~ Speyside/Scotch Block</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jul 28, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>84</span>
+    
+        <span class="par-score">+12</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/55029576" class="scorecard-link" data-scorecard-id="55029576">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Jul 27, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>75</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/51550606" class="scorecard-link" data-scorecard-id="51550606">
+        <span class="nowrap" title="The Country Club ~ East">The Country Club ~ East</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jul 21, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>79</span>
+    
+        <span class="par-score">+8</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/51550576" class="scorecard-link" data-scorecard-id="51550576">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Jul 20, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>80</span>
+    
+        <span class="par-score">+9</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/51550566" class="scorecard-link" data-scorecard-id="51550566">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Jul 20, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>79</span>
+    
+        <span class="par-score">+8</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/49768766" class="scorecard-link" data-scorecard-id="49768766">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jul 14, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>81</span>
+    
+        <span class="par-score">+10</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/49768741" class="scorecard-link" data-scorecard-id="49768741">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Jul 13, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>79</span>
+    
+        <span class="par-score">+8</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/47780356" class="scorecard-link" data-scorecard-id="47780356">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jul 7, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>77</span>
+    
+        <span class="par-score">+6</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/47780336" class="scorecard-link" data-scorecard-id="47780336">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Jul 6, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>75</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/46967906" class="scorecard-link" data-scorecard-id="46967906">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Monday, Jul 1, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>76</span>
+    
+        <span class="par-score">+5</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/46967886" class="scorecard-link" data-scorecard-id="46967886">
+        <span class="nowrap" title="The Country Club ~ West">The Country Club ~ West</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jun 30, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>81</span>
+    
+        <span class="par-score">+10</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/45892721" class="scorecard-link" data-scorecard-id="45892721">
+        <span class="nowrap" title="The Country Club ~ West">The Country Club ~ West</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Jun 29, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>84</span>
+    
+        <span class="par-score">+13</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/44484376" class="scorecard-link" data-scorecard-id="44484376">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jun 23, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>81</span>
+    
+        <span class="par-score">+10</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/44300786" class="scorecard-link" data-scorecard-id="44300786">
+        <span class="nowrap" title="Greystone Golf Club">Greystone Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Jun 22, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>87</span>
+    
+        <span class="par-score">+15</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/42907706" class="scorecard-link" data-scorecard-id="42907706">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jun 16, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>76</span>
+    
+        <span class="par-score">+5</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/41411541" class="scorecard-link" data-scorecard-id="41411541">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jun 9, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>37</span>
+    
+        <span class="par-score">+1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/40985586" class="scorecard-link" data-scorecard-id="40985586">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Jun 8, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>37</span>
+    
+        <span class="par-score">+2</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/40113131" class="scorecard-link" data-scorecard-id="40113131">
+        <span class="nowrap" title="Diamondback Golf Club">Diamondback Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Tuesday, Jun 4, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>80</span>
+    
+        <span class="par-score">+8</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/39791931" class="scorecard-link" data-scorecard-id="39791931">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Jun 2, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>77</span>
+    
+        <span class="par-score">+14</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/39534236" class="scorecard-link" data-scorecard-id="39534236">
+        <span class="nowrap" title="The Country Club ~ East">The Country Club ~ East</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Jun 1, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>77</span>
+    
+        <span class="par-score">+6</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/39534216" class="scorecard-link" data-scorecard-id="39534216">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, May 26, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>19</span>
+    
+        <span class="par-score">+1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/37633866" class="scorecard-link" data-scorecard-id="37633866">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, May 25, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>76</span>
+    
+        <span class="par-score">+5</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/36548841" class="scorecard-link" data-scorecard-id="36548841">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Monday, May 20, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>75</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/36548706" class="scorecard-link" data-scorecard-id="36548706">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, May 19, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>77</span>
+    
+        <span class="par-score">+6</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/36068296" class="scorecard-link" data-scorecard-id="36068296">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, May 18, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>73</span>
+    
+        <span class="par-score">+2</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/34823171" class="scorecard-link" data-scorecard-id="34823171">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, May 12, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>80</span>
+    
+        <span class="par-score">+9</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/34595551" class="scorecard-link" data-scorecard-id="34595551">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, May 11, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>83</span>
+    
+        <span class="par-score">+12</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/32981466" class="scorecard-link" data-scorecard-id="32981466">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, May 3, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>70</span>
+    
+        <span class="par-score">-1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/32937746" class="scorecard-link" data-scorecard-id="32937746">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Friday, May 3, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>78</span>
+    
+        <span class="par-score">+7</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/32795506" class="scorecard-link" data-scorecard-id="32795506">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Thursday, May 2, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>76</span>
+    
+        <span class="par-score">+5</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/32795486" class="scorecard-link" data-scorecard-id="32795486">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Thursday, May 2, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>78</span>
+    
+        <span class="par-score">+7</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/32601436" class="scorecard-link" data-scorecard-id="32601436">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, May 1, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>77</span>
+    
+        <span class="par-score">+6</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/32601431" class="scorecard-link" data-scorecard-id="32601431">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, May 1, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>76</span>
+    
+        <span class="par-score">+5</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/32364161" class="scorecard-link" data-scorecard-id="32364161">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Tuesday, Apr 30, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>82</span>
+    
+        <span class="par-score">+11</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/32173381" class="scorecard-link" data-scorecard-id="32173381">
+        <span class="nowrap" title="The Country Club ~ West">The Country Club ~ West</span>
+    </a>
+
+    <br>
+    <span class="data-label">Monday, Apr 29, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>82</span>
+    
+        <span class="par-score">+11</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/31990276" class="scorecard-link" data-scorecard-id="31990276">
+        <span class="nowrap" title="The Country Club ~ West">The Country Club ~ West</span>
+    </a>
+
+    <br>
+    <span class="data-label">Sunday, Apr 28, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>87</span>
+    
+        <span class="par-score">+16</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/31707576" class="scorecard-link" data-scorecard-id="31707576">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Saturday, Apr 27, 2019&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>83</span>
+    
+        <span class="par-score">+12</span>
+    
+</td></tr></tbody>
+    </table>
+
+    
+
+</div></div></div>
+</div>
+
+        <!-- END .content -->
+
+        <!-- Footer -->
+        <div class="main-footer"><div><footer class="footer clearfix"><div class="legal pull-left"><div class="footer-nav"><a href="/en-US/help" target="footer_link">Help</a><a href="/en-US/status" target="footer_link">Status</a><a class="footer-facebook" href="https://www.facebook.com/garminfit" target="footer_link">Facebook</a><a class="footer-instagram" href="https://www.instagram.com/garminfitness/" target="footer_link">Instagram</a><a class="footer-twitter" href="https://twitter.com/GarminFitness" target="footer_link">Twitter</a><a href="https://www.garmin.com/en-US/privacy/connect/" target="footer_link">Statement of Privacy</a><a href="https://www.garmin.com/en-US/legal/terms-of-use/" target="footer_link">Terms of Use</a><a href="https://www.garmin.com/en-US/legal/security" target="footer_link">Security</a><div class="details">Connect is powered by <a rel="noopener noreferrer" href="http://www.garmin.com" target="_blank">Garmin</a> • <span id="copyright" class="copyright">Copyright © 1996-2020 Garmin Ltd. or its subsidiaries • Version: 4.36.0.17, 20.21.2.0</span><div id="consent"><div><span id="cookie_preferences" class="Consent_cookiePreference__3olwd"></span><div id="consent_blackbar" class="Consent_consentBar__2qiYx"></div></div></div></div></div></div><div class="activity-tracking-wrapper pull-right"><a href="http://www.garmin.com/en-US/legal/atdisclaimer" class="activity-tracking-disclaimer" target="_blank" rel="noopener noreferrer">Activity Tracking Accuracy</a></div></footer></div></div>
+        <!-- END .footer -->
+        <p style="display: none;" id="garmin-connect-version">4.36.0.17</p>
+    </div>
+
+    <!-- END .container -->
+</div>
+
+<style>
+    .privacy-overlay {
+        position: fixed; /* Sit on top of the page content */
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 9999; /* Specify a stack order in case you're using a different order for other elements */
+    }
+</style>
+
+
+
+
+
+
+
+</body></html>
