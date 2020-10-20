@@ -7,9 +7,10 @@ I wish to analyse how my game is progressing by accessing my data in Garmin and 
 
 ## Tasks
 
-1. Gather ID scorecards which is necessary to call garmin API. - In Progress
-2. Aquire data through a Garmin Webservice. - Backlog
-3. Begin to visualise the data. - Backlog
+1. Gather ID scorecards which is necessary to call garmin API. - Complete
+2. Aquire data through a Garmin Webservice. - Complete
+3. Begin to visualise the data. - In Progress
+    1. Create a Notebook specifically for Caledon woods. - In Progress
 
 ## Dependencies
 
