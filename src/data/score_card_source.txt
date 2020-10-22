@@ -14,8 +14,8 @@
 
     <!-- Connect Styles -->
     
-        <link rel="stylesheet" type="text/css" href="/modern/css/dropzone.min.css?bust=4.36.0.17">
-        <link rel="stylesheet" type="text/css" href="/web-react/styles/global.css?bust=4.36.0.17">
+        <link rel="stylesheet" type="text/css" href="/modern/css/dropzone.min.css?bust=4.36.1.0">
+        <link rel="stylesheet" type="text/css" href="/web-react/styles/global.css?bust=4.36.1.0">
     
     
 
@@ -31,7 +31,7 @@
 
 
     <title>Connect</title>
-<link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/33f08faa-6abb-43e2-9ea9-658dc8af7834"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/2b9a0022-908a-47a7-9cbf-b563637c0a39"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/3c2e57ae-eb60-4e59-b39f-5264c32500de"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/80b68152-0ca9-478a-bc2c-17e09aeae0ff"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/6c690e4f-6a63-4bfc-80ab-374968cd0e85"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/08948fe8-757d-4b6f-9fc7-ff30354481b5"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/302d02b7-d63c-4c85-a5f2-0f8d74998b23"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/6464c004-e9dd-4b41-b68e-4f26385a7b5c"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/428de3db-dcaa-4cab-84cc-186daf433db2"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/19a6f631-3af0-43bf-9d6e-c0306287bc74"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/2c76b5be-e4af-482d-9bca-78a2129703ec"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/6d4592df-0cb6-4434-8824-080984cbb451"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/831b8694-89b8-42f7-803b-f789e00949ec"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/ad9a459c-e251-4600-9e0f-81a1f7d6a61b"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/b2f3c684-5e0c-460e-9c39-92b7af5b0db2"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/23b8f99e-e58b-4656-80dd-8ddd44ebbd06"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/2c2b07a7-8d79-4ecf-8824-bf8b44a1fa80"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/efb02582-bce6-4035-8b40-38f9314d8a7b"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/1e33ac2a-01bf-4969-9554-81d60fa19e09"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/c7fbe23c-d1f0-4147-8ed1-93dd6fd23b27"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/e066e876-1b33-4fad-9378-809fa71fa111"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/9c8733a0-677c-4846-9171-aaa63e1d04a2"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/7487f56d-7774-4f06-9fb4-392869a55206"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/5327f4e9-dea7-460a-b5c1-fb1e08b2fdb0"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/247b37f0-dfd8-47ba-a8f8-d637313690d8"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/69081b4f-5048-46e8-b954-3ab22b82175b"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/b41b3bd3-1322-4e66-b09f-f463f9594cdc"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/3b67bf5d-dc1a-4457-aab6-d0480a0d9e9a"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/2e0a6b07-d263-4c8f-b406-58488b4e264f"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/deba0832-a47f-420a-8ab4-1d068e88715e"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/2735a363-450c-454e-b9d0-da4efa20834c"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/6cfff120-9eee-4dcc-bb13-82a3459fe4c1"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/ebd048b5-4f01-4ade-83bb-bc272c913c9e"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/f4e498c4-4130-41f1-ab3f-c75b8f214ee3"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/5de3dbf0-381b-4e03-ad41-8aac738694fe"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/117c0026-3d85-4ae3-9123-ee74a216f16c"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/04fd337a-a5d3-4290-974c-b585f493643b"><script type="text/javascript" async="" src="https://www.google-analytics.com/gtm/js?id=GTM-NN6KRBF&amp;t=gprod&amp;cid=1800272576.1603154661"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" async="" charset="utf-8" id="tealium-tag-7110" src="https://www.google-analytics.com/analytics.js"></script><script charset="utf-8" src="/web-react/static/js/139.215566ec.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/140.4d447bf1.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/141.5d4b70d7.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/142.94a24418.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/143.da00b9c7.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/144.6af3ae65.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/145.028d75b7.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/146.0afc0aaa.chunk.js"></script><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/3a1e4a81-9fe2-4818-b1f3-f0876ba895c9"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/5736d9d8-e87a-4871-8891-35146452bbc0"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/586bc24d-c6e1-47e3-a154-dddd73875e59"><script charset="utf-8" src="/web-react/static/js/134.9852f706.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/135.5503a625.chunk.js"></script><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/f88bfc60-020e-4411-a74b-8011ca0c18e2"><script async="" src="https://tags.tiqcdn.com/utag/garmin/main/prod/utag.js"></script><script async="" src="https://sso.garmin.com/sso/js/gauth-widget.js"></script><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/8a94ee02-76d4-4776-86a0-aa826c783be6"><script charset="utf-8" src="/web-react/static/js/80.3b88242b.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/111.ecead63a.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/124.87cdd985.chunk.js"></script><script type="text/javascript" async="" charset="utf-8" id="utag_garmin.main_472" src="//tags.tiqcdn.com/utag/tiqapp/utag.currency.js?utv=ut4.44.202010191221"></script><script charset="utf-8" src="/web-react/static/js/11.5c223894.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/247.95d86247.chunk.js"></script><link rel="stylesheet" type="text/css" href="https://sso.garmin.com/sso/css/gauth-widget.css?20190903"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/3df777c6-4276-48c4-8edf-c80117c2e678"><script type="text/javascript" async="" charset="utf-8" id="utag_garmin.main_721" src="//tags.tiqcdn.com/utag/garmin/main/prod/utag.721.js?utv=ut4.44.202006301649"></script><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/0f1f8ccb-ee27-4d64-868f-23a2a0d60ae3"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/778f1f87-945a-450a-ba4c-4f6a58eb547c"></head>
+<link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/cac14763-259c-48b1-b231-ce54bb151b00"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/8bf84fbe-9dae-4b9d-913e-864b69a6db2c"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/12a66855-dc25-43a4-aad0-8c7f54d0613f"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/68358a64-b610-49a9-8301-f88125bc4c4f"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/ad156614-7561-4612-9406-1b6797bef6bc"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/e4f10c8b-7889-43fc-a141-1f6b84ab476d"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/879a7afd-5f1b-49e2-958a-2f18c6473884"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/02f9b81c-205d-43e9-bb57-a179334756fe"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/64edbeca-5e86-4856-9976-f0b5481b57fe"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/2bbe13a8-f44f-4899-8f44-aa2814009963"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/629d82ae-8f75-49c4-84c0-4085df7802fd"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/dc93ed64-6e86-4d4c-8c56-5d0a2cceae91"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/7bf9a51b-b6c0-46c7-9d2c-9019ef4c489b"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/bd364e8a-f583-4369-83be-ab268cbf8caf"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/7349e6a7-ae7c-490b-96c7-bfc098f981ee"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/053db0be-6df5-41a4-831b-07d2dc395d7a"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/99bbed86-3def-4a6e-b167-725d6a389a52"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/feb4adc7-67f3-4668-bb76-e5dd3907bf63"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/ae3e7667-037f-41fa-af3e-a9de91812b3a"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/2c3f355c-4e1c-4113-8653-983441087c06"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/7f8b38d9-0007-4b17-a31e-e7cd69dc5c3f"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/e1520990-abca-4c8b-96e8-d7ed6ff4167f"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/18e081c3-bee7-491b-b938-9eb77e4de685"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/7f599d7b-1ee1-41e2-88d6-74c12e0df823"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/f31a3b5f-a967-472a-97a0-8d2fbb114395"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/78e26f71-48df-44d7-a1a9-4c5d6c309bc5"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/999b557b-d924-42ae-8e7d-469607a127d5"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/35a1a5f1-f241-4beb-b207-a8559207aa0f"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/b559c398-b95c-47a1-8b28-34b7522ac929"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/a3c5b62c-36ec-41b4-9d6d-689177bc41e8"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/9e7e7eb6-0420-454d-923f-7f24d16c8d1c"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/cc4e6954-aaf5-4cf8-a86b-4c6e2cc212e8"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/09e35ece-1f58-4675-8785-4a3757b0c116"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/9b331f5b-b3dc-4b00-adb6-cb076965131f"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/353f94f5-19a4-4bba-944e-738c2b595887"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/d005af30-3c74-456d-956b-9b757f49ecb3"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/cd1e3b0c-9169-48c6-98a5-4c77e2d00d62"><script type="text/javascript" async="" src="https://www.google-analytics.com/gtm/js?id=GTM-NN6KRBF&amp;t=gprod&amp;cid=514351903.1603334530"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" async="" charset="utf-8" id="tealium-tag-7110" src="https://www.google-analytics.com/analytics.js"></script><script charset="utf-8" src="/web-react/static/js/139.215566ec.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/140.4d447bf1.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/141.5d4b70d7.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/142.94a24418.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/143.da00b9c7.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/144.6af3ae65.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/145.028d75b7.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/146.0afc0aaa.chunk.js"></script><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/a361e587-f9d4-4a56-b906-8ae11ecdc4b9"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/b3e00f0f-c079-4646-8338-6b9d063315d1"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/3fd5cb5b-e154-4dac-9143-abd323c5bf0d"><script charset="utf-8" src="/web-react/static/js/134.9852f706.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/135.5503a625.chunk.js"></script><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/2bd110a3-ea54-42fe-84f3-b98280de7a89"><script async="" src="https://tags.tiqcdn.com/utag/garmin/main/prod/utag.js"></script><script async="" src="https://sso.garmin.com/sso/js/gauth-widget.js"></script><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/face1507-5916-4fbb-b1d8-29fc6a534b1e"><script charset="utf-8" src="/web-react/static/js/80.a4b8884d.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/111.ecead63a.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/124.87cdd985.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/11.5c223894.chunk.js"></script><script charset="utf-8" src="/web-react/static/js/247.1509a427.chunk.js"></script><script type="text/javascript" async="" charset="utf-8" id="utag_garmin.main_472" src="//tags.tiqcdn.com/utag/tiqapp/utag.currency.js?utv=ut4.44.202010191221"></script><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/f3839993-aae4-48f9-bc31-84705ec10d29"><link rel="stylesheet" type="text/css" href="https://sso.garmin.com/sso/css/gauth-widget.css?20190903"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/d9d53755-db9c-4b34-a820-649eb61daf86"><link type="text/css" rel="stylesheet" href="blob:https://connect.garmin.com/bb104ad7-0037-443c-9196-caab3dea0c28"><script type="text/javascript" async="" charset="utf-8" id="utag_garmin.main_721" src="//tags.tiqcdn.com/utag/garmin/main/prod/utag.721.js?utv=ut4.44.202006301649"></script></head>
 
 
 <body style="" class="">
@@ -96,7 +96,7 @@
     <button class="add-dashboard js-add-unavailable max" title="You've been busy. Max dashboards have been added." aria-disabled="true" data-rel="tooltip" data-html="true" data-original-title="You've been busy. Max dashboards have been added." aria-label="You've been busy. Max dashboards have been added." data-placement="top" style="display: none;">Add Dashboard</button>
 </li>
 </ul></li>
-    <li class="main-nav-item"><a href="/modern/daily-summary/2020-10-19" class="main-nav-link">
+    <li class="main-nav-item"><a href="/modern/daily-summary/2020-10-21" class="main-nav-link">
     <i class="nav-icon icon-layers"></i>
     <span class="nav-text">Daily Summary</span>
     
@@ -133,7 +133,7 @@
 </a>
 
     <ul class="main-nav-menu">
-    <li class="main-nav-menu-item"><a href="/modern/activities" class="main-nav-link">All Activities</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-19/steps" class="main-nav-link">Steps</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-19/floors" class="main-nav-link">Floors</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-19/intensityMinutes" class="main-nav-link">Intensity Minutes</a></li></ul>
+    <li class="main-nav-menu-item"><a href="/modern/activities" class="main-nav-link">All Activities</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-21/steps" class="main-nav-link">Steps</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-21/floors" class="main-nav-link">Floors</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-21/intensityMinutes" class="main-nav-link">Intensity Minutes</a></li></ul>
 
 </li><li class="main-nav-item"><a href="" class="main-nav-link main-nav-menu-toggle">
     <i class="nav-icon icon-heart"></i>
@@ -144,7 +144,7 @@
 </a>
 
     <ul class="main-nav-menu">
-    <li class="main-nav-menu-item"><a href="/modern/sleep/2020-10-19" class="main-nav-link">Sleep</a></li><li class="main-nav-menu-item"><a href="/modern/weight" class="main-nav-link">Weight</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-19/hydration" class="main-nav-link">Hydration</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-19/calories" class="main-nav-link">Calories In/Out</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-19/heartRate" class="main-nav-link">Heart Rate</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-19/stress" class="main-nav-link">Stress</a></li></ul>
+    <li class="main-nav-menu-item"><a href="/modern/sleep/2020-10-21" class="main-nav-link">Sleep</a></li><li class="main-nav-menu-item"><a href="/modern/weight" class="main-nav-link">Weight</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-21/hydration" class="main-nav-link">Hydration</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-21/calories" class="main-nav-link">Calories In/Out</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-21/heartRate" class="main-nav-link">Heart Rate</a></li><li class="main-nav-menu-item"><a href="/modern/daily-summary/2020-10-21/stress" class="main-nav-link">Stress</a></li></ul>
 
 </li><li class="main-nav-item"><a href="" class="main-nav-link main-nav-menu-toggle active">
     <i class="nav-icon icon-activity-golf"></i>
@@ -550,6 +550,294 @@
         <tbody>
 
         <tr><td class="info">
+    <a href="/modern/scorecard/166166218" class="scorecard-link" data-scorecard-id="166166218">
+        <span class="nowrap" title="The Country Club ~ South">The Country Club ~ South</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>32</span>
+    
+        <span class="par-score">+2</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166166180" class="scorecard-link" data-scorecard-id="166166180">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>78</span>
+    
+        <span class="par-score">+7</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166166131" class="scorecard-link" data-scorecard-id="166166131">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>39</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166166070" class="scorecard-link" data-scorecard-id="166166070">
+        <span class="nowrap" title="National Pines Golf Club">National Pines Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>77</span>
+    
+        <span class="par-score">+5</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166166026" class="scorecard-link" data-scorecard-id="166166026">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>75</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166165966" class="scorecard-link" data-scorecard-id="166165966">
+        <span class="nowrap" title="Wyndance Golf Club">Wyndance Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>84</span>
+    
+        <span class="par-score">+12</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166165931" class="scorecard-link" data-scorecard-id="166165931">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>75</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166165862" class="scorecard-link" data-scorecard-id="166165862">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>75</span>
+    
+        <span class="par-score">+4</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166165805" class="scorecard-link" data-scorecard-id="166165805">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>71</span>
+    
+        <span class="par-score">E</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166165723" class="scorecard-link" data-scorecard-id="166165723">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>71</span>
+    
+        <span class="par-score">E</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166165626" class="scorecard-link" data-scorecard-id="166165626">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>69</span>
+    
+        <span class="par-score">-2</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166165519" class="scorecard-link" data-scorecard-id="166165519">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>71</span>
+    
+        <span class="par-score">E</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166165440" class="scorecard-link" data-scorecard-id="166165440">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>82</span>
+    
+        <span class="par-score">+11</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166165345" class="scorecard-link" data-scorecard-id="166165345">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>74</span>
+    
+        <span class="par-score">+3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166165268" class="scorecard-link" data-scorecard-id="166165268">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>68</span>
+    
+        <span class="par-score">-3</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166165150" class="scorecard-link" data-scorecard-id="166165150">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>72</span>
+    
+        <span class="par-score">+1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166165030" class="scorecard-link" data-scorecard-id="166165030">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>72</span>
+    
+        <span class="par-score">+1</span>
+    
+</td></tr><tr><td class="info">
+    <a href="/modern/scorecard/166164637" class="scorecard-link" data-scorecard-id="166164637">
+        <span class="nowrap" title="Caledon Woods Golf Club">Caledon Woods Golf Club</span>
+    </a>
+
+    <br>
+    <span class="data-label">Wednesday, Oct 21, 2020&nbsp;|&nbsp;Stroke Play</span>
+    <br>
+
+    
+</td>
+<td class="total">
+    <span>79</span>
+    
+        <span class="par-score">+8</span>
+    
+</td></tr><tr><td class="info">
     <a href="/modern/scorecard/166043677" class="scorecard-link" data-scorecard-id="166043677">
         <span class="nowrap" title="The Country Club ~ East">The Country Club ~ East</span>
     </a>
@@ -2928,9 +3216,9 @@
         <!-- END .content -->
 
         <!-- Footer -->
-        <div class="main-footer"><div><footer class="footer clearfix"><div class="legal pull-left"><div class="footer-nav"><a href="/en-US/help" target="footer_link">Help</a><a href="/en-US/status" target="footer_link">Status</a><a class="footer-facebook" href="https://www.facebook.com/garminfit" target="footer_link">Facebook</a><a class="footer-instagram" href="https://www.instagram.com/garminfitness/" target="footer_link">Instagram</a><a class="footer-twitter" href="https://twitter.com/GarminFitness" target="footer_link">Twitter</a><a href="https://www.garmin.com/en-US/privacy/connect/" target="footer_link">Statement of Privacy</a><a href="https://www.garmin.com/en-US/legal/terms-of-use/" target="footer_link">Terms of Use</a><a href="https://www.garmin.com/en-US/legal/security" target="footer_link">Security</a><div class="details">Connect is powered by <a rel="noopener noreferrer" href="http://www.garmin.com" target="_blank">Garmin</a> • <span id="copyright" class="copyright">Copyright © 1996-2020 Garmin Ltd. or its subsidiaries • Version: 4.36.0.17, 20.21.2.0</span><div id="consent"><div><span id="cookie_preferences" class="Consent_cookiePreference__3olwd"></span><div id="consent_blackbar" class="Consent_consentBar__2qiYx"></div></div></div></div></div></div><div class="activity-tracking-wrapper pull-right"><a href="http://www.garmin.com/en-US/legal/atdisclaimer" class="activity-tracking-disclaimer" target="_blank" rel="noopener noreferrer">Activity Tracking Accuracy</a></div></footer></div></div>
+        <div class="main-footer"><div><footer class="footer clearfix"><div class="legal pull-left"><div class="footer-nav"><a href="/en-US/help" target="footer_link">Help</a><a href="/en-US/status" target="footer_link">Status</a><a class="footer-facebook" href="https://www.facebook.com/garminfit" target="footer_link">Facebook</a><a class="footer-instagram" href="https://www.instagram.com/garminfitness/" target="footer_link">Instagram</a><a class="footer-twitter" href="https://twitter.com/GarminFitness" target="footer_link">Twitter</a><a href="https://www.garmin.com/en-US/privacy/connect/" target="footer_link">Statement of Privacy</a><a href="https://www.garmin.com/en-US/legal/terms-of-use/" target="footer_link">Terms of Use</a><a href="https://www.garmin.com/en-US/legal/security" target="footer_link">Security</a><div class="details">Connect is powered by <a rel="noopener noreferrer" href="http://www.garmin.com" target="_blank">Garmin</a> • <span id="copyright" class="copyright">Copyright © 1996-2020 Garmin Ltd. or its subsidiaries • Version: 4.36.1.0, 20.22.0.102</span><div id="consent"><div><span id="cookie_preferences" class="Consent_cookiePreference__3olwd"></span><div id="consent_blackbar" class="Consent_consentBar__2qiYx"></div></div></div></div></div></div><div class="activity-tracking-wrapper pull-right"><a href="http://www.garmin.com/en-US/legal/atdisclaimer" class="activity-tracking-disclaimer" target="_blank" rel="noopener noreferrer">Activity Tracking Accuracy</a></div></footer></div></div>
         <!-- END .footer -->
-        <p style="display: none;" id="garmin-connect-version">4.36.0.17</p>
+        <p style="display: none;" id="garmin-connect-version">4.36.1.0</p>
     </div>
 
     <!-- END .container -->
