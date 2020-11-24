@@ -156,7 +156,6 @@ def get_scorecard_info(get_scorecard_ids):
     return True
 
 if __name__ == "__main__":
-
     result = get_scorecard_info(True)
     if result:
         print("The scorecards were retrieved from Garmin and inserted. Please check MongoDB.")
