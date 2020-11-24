@@ -19,4 +19,4 @@ class Stats():
         db = client.Golf_Stats_DB
         self.collection = db.Scorecards
 
-tester = Stats()
+tester = Stats() 
