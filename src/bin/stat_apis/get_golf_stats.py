@@ -49,7 +49,7 @@ class Stats():
         Function Returns: (List: The collection of hole numbers and putts per hole.)
         """
 
-        return list(self.collection.aggregate([
+        df = DataFrame(list(self.collection.aggregate([
             {"$match": {"courseSnapshots.courseGlobalId": course_id}},
             {"$unwind": "$scorecardDetails"},
             {"$sort": {"scorecardDetails.scorecard.startTime" : 1}},
@@ -57,8 +57,26 @@ class Stats():
             {"$group": {"_id": "$scorecardDetails.scorecard.holes.number",
                 "scoring_average": {"$avg": "$scorecardDetails.scorecard.holes.strokes"}}}, 
             {'$sort': {"_id": 1}}
-        ]))
+        ])))
+        return df.set_index('_id')
 
+    def get_hole_pars(self, course_id, holes=18):
 
+        """
+        Function Description: Get the par of each hole on a course.
+        Function Parameters: course_id (Int: The course Id.)
+        Function Throws: Nothing
+        Function Returns: (Dict: A dictionary of all holes and there respective pars.)
+        """
+
+        hole_pars_dict = {}
+        hole_pars = list(s.collection.aggregate([
+	        {"$match": {"courseSnapshots.courseGlobalId": course_id,
+             "scorecardDetails.scorecard.holesCompleted" : holes}},
+	        {"$unwind": "$courseSnapshots"},
+	        {"$project": {"_id": 0, "holePars": "$courseSnapshots.holePars"}}
+	        ]))[0]
+        return {hole:par for hole, par in in enumerate(hole_pars['holePars'])}
+        
 
 tester = Stats() 
