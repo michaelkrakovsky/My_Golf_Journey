@@ -5,7 +5,8 @@ from sys import path
 path.extend('../../../../')                      # Import the entire project.
 from My_Golf_Journey.config import mongo_config
 from pymongo import MongoClient
-from pandas import DataFrame
+from pandas import DataFrame, to_numeric
+from numpy import float16
 
 class Stats():
 
@@ -58,7 +59,8 @@ class Stats():
                 "scoring_average": {"$avg": "$scorecardDetails.scorecard.holes.strokes"}}}, 
             {'$sort': {"_id": 1}}
         ])))
-        return df.set_index('_id')
+        df = df.set_index('_id')
+        return df.join(self.get_hole_pars(course_id))
 
     def get_hole_pars(self, course_id, holes=18):
 
@@ -66,17 +68,13 @@ class Stats():
         Function Description: Get the par of each hole on a course.
         Function Parameters: course_id (Int: The course Id.)
         Function Throws: Nothing
-        Function Returns: (Dict: A dictionary of all holes and there respective pars.)
+        Function Returns: (Dataframe: A dataframe of all holes and there respective pars.)
         """
 
-        hole_pars_dict = {}
-        hole_pars = list(s.collection.aggregate([
+        hole_pars = list(self.collection.aggregate([
 	        {"$match": {"courseSnapshots.courseGlobalId": course_id,
              "scorecardDetails.scorecard.holesCompleted" : holes}},
 	        {"$unwind": "$courseSnapshots"},
 	        {"$project": {"_id": 0, "holePars": "$courseSnapshots.holePars"}}
 	        ]))[0]
-        return {hole:par for hole, par in in enumerate(hole_pars['holePars'])}
-        
-
-tester = Stats() 
+        return DataFrame({hole + 1 : par for hole, par in enumerate(hole_pars['holePars'])}.items(), columns=['Hole', 'Par']).set_index('Hole').astype(float16)
