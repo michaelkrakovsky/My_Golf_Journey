@@ -78,3 +78,49 @@ class Stats():
 	        {"$project": {"_id": 0, "holePars": "$courseSnapshots.holePars"}}
 	        ]))[0]
         return DataFrame({hole + 1 : par for hole, par in enumerate(hole_pars['holePars'])}.items(), columns=['Hole', 'Par']).set_index('Hole').astype(float16)
+
+    def get_fairways(self, course_id):
+
+        """
+        Function Description: Get the count of Fairways hit and missed.
+        Function Parameters: course_id (Int: The course id.)
+        Function Throws: Nothing
+        Function Returns: (DataFrame: The organised data containing the results.)
+
+                   outcome  hole  count
+                1     LEFT     4     35
+        """
+
+        caledon_rounds = list(self.collection.aggregate([                                                                                # Filter the information pertaining to Fairways Hit.
+            {
+                '$match': {
+                    'courseSnapshots.courseGlobalId': course_id
+                }
+            }, {
+                '$unwind': {
+                    'path': '$scorecardDetails'
+                }
+            }, {
+                '$unwind': {
+                    'path': '$scorecardDetails.scorecard.holes'
+                }
+            }, {
+                '$group': {
+                    '_id': {
+                        'outcome': '$scorecardDetails.scorecard.holes.fairwayShotOutcome', 
+                        'hole': '$scorecardDetails.scorecard.holes.number'
+                    }, 
+                    'count': {
+                        '$sum': 1
+                    }
+                }
+            }
+        ]))
+        new_caledon_rounds = []                                                                                                       # Clean the data for missing data.
+        for el in caledon_rounds:
+            if 'outcome' in el['_id']:
+                new_caledon_rounds.append({'outcome': el['_id']['outcome'], 'hole': el['_id']['hole'], 'count': el['count']})
+            else:
+                new_caledon_rounds.append({'outcome': 'NO_ENTRY', 'hole': el['_id']['hole'], 'count': el['count']})
+        caledon_rounds = DataFrame(new_caledon_rounds)
+        return caledon_rounds[(caledon_rounds['outcome'] != "NO_ENTRY") & (caledon_rounds['outcome'] != "NO_FAIRWAY")]
