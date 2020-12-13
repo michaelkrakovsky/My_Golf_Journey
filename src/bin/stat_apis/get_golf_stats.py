@@ -91,7 +91,7 @@ class Stats():
                 1     LEFT     4     35
         """
 
-        caledon_rounds = list(self.collection.aggregate([                                                                                # Filter the information pertaining to Fairways Hit.
+        rounds = list(self.collection.aggregate([                                                                             # Filter the information pertaining to Fairways Hit.
             {
                 '$match': {
                     'courseSnapshots.courseGlobalId': course_id
@@ -116,11 +116,36 @@ class Stats():
                 }
             }
         ]))
-        new_caledon_rounds = []                                                                                                       # Clean the data for missing data.
-        for el in caledon_rounds:
+        new_rounds = []                                                                                                       # Clean the data for missing data.
+        for el in rounds:
             if 'outcome' in el['_id']:
-                new_caledon_rounds.append({'outcome': el['_id']['outcome'], 'hole': el['_id']['hole'], 'count': el['count']})
+                new_rounds.append({'outcome': el['_id']['outcome'], 'hole': el['_id']['hole'], 'count': el['count']})
             else:
-                new_caledon_rounds.append({'outcome': 'NO_ENTRY', 'hole': el['_id']['hole'], 'count': el['count']})
-        caledon_rounds = DataFrame(new_caledon_rounds)
-        return caledon_rounds[(caledon_rounds['outcome'] != "NO_ENTRY") & (caledon_rounds['outcome'] != "NO_FAIRWAY")]
+                new_rounds.append({'outcome': 'NO_ENTRY', 'hole': el['_id']['hole'], 'count': el['count']})
+        rounds = DataFrame(new_rounds)
+        return rounds[(rounds['outcome'] != "NO_ENTRY") & (rounds['outcome'] != "NO_FAIRWAY")]
+
+    def get_fairway_accuracy(self, course_id):
+        
+        """
+        Function Description: Get the Fairway Accuracy of each hole at a course.
+        Function Parameters: course_id (Int: The course id of the course.)
+        Function Throws: Nothing
+        Function Returns: (DataFrame: The data containing the fairways hit.)
+
+                count  HIT_Count  Accuracy
+            hole                            
+            1       134       61.0  0.455224
+
+        """
+        
+        rounds = self.get_fairways(course_id)
+        rounds = rounds[(rounds['outcome'] != "NO_ENTRY") & (rounds['outcome'] != "NO_FAIRWAY")]        # Filter out records that do not apply.
+        new_rounds = rounds.groupby(by=["hole"]).sum()
+        for index, row in new_rounds.iterrows():
+            hit_count = int(rounds[(rounds['hole'] == index) & (rounds['outcome'] == "HIT")]['count'])
+            accuracy = hit_count / int(row['count'])
+            new_rounds.loc[index, 'HIT_Count'] = hit_count
+            new_rounds.loc[index, 'Accuracy'] = accuracy
+        new_rounds.index.names = ['_id']
+        return new_rounds                                                                               # Change the index for consistency.
