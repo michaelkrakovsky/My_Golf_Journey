@@ -66,7 +66,7 @@ class Stats():
 
         """
         Function Description: Get the par of each hole on a course.
-        Function Parameters: course_id (Int: The course Id.)
+        Function Parameters: course_id (Int: The course Id.), holes (Int: The number of holes completed in the round.)
         Function Throws: Nothing
         Function Returns: (Dataframe: A dataframe of all holes and there respective pars.)
         """
@@ -149,3 +149,35 @@ class Stats():
             new_rounds.loc[index, 'Accuracy'] = accuracy
         new_rounds.index.names = ['_id']
         return new_rounds                                                                               # Change the index for consistency.
+
+    def _greens_by_hole(self, course_id):
+
+        """
+        Function Description: Organise the necessary data to determine the user has hit a green.
+        Function Parameters: course_id (Int: The course id to retrieve the stats.)
+        Function Throws: Nothing
+        Function Returns: (DataFrame: The data organised in a Pandas DataFrame.)
+        """
+
+        return DataFrame(list(self.collection.aggregate([
+            {
+                '$match': {
+                    'courseSnapshots.courseGlobalId': course_id
+                }
+            }, {
+                '$unwind': {
+                    'path': '$scorecardDetails'
+                }
+            }, {
+                '$unwind': {
+                    'path': '$scorecardDetails.scorecard.holes'
+                }
+            }, {
+                '$project': {
+                    '_id': 0, 
+                    'hole_number': '$scorecardDetails.scorecard.holes.number', 
+                    'strokes': '$scorecardDetails.scorecard.holes.strokes', 
+                    'putts': '$scorecardDetails.scorecard.holes.putts'
+                }
+            }
+        ])))
