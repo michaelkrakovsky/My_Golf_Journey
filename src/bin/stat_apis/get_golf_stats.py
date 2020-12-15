@@ -181,3 +181,56 @@ class Stats():
                 }
             }
         ])))
+
+    def _is_hit(self, par_df, hole_number, strokes, putts):
+
+        """
+        Function Description: Determine whether the a green was hit in regulation.
+        Function Parameters: par_df (DataFrame: The hole numbers and their respective pars.), 
+            hole_number (Int: The hole number where the event took place.), 
+            strokes (Int: The number of strokes incurred within the hole.), 
+            putts (Int: The number of putts taken on the hole.)
+        Function Throws: Nothing
+        Function Returns: (Boolean: True if GIR or under and False otherwise.)
+        """
+
+        hole_par = int(par_df.loc[hole_number, :]['Par'])
+        if hole_par == 5:
+            x = strokes - putts - 3
+        elif hole_par == 4:
+            x = strokes - putts - 2
+        else:
+            x = strokes - putts - 1
+        return x <= 0
+
+    def get_green_accuracy(self, course_id):
+
+        """
+        Function Description: Calculate the greens hit on a particular course.
+        Function Parameters: course_id (Int: The course id.)
+        Function Throws: Nothing
+        Function Returns: (DataFrame: The accuracy of greens hit on the course.)
+
+              hit_count	attempt	hit_percentage
+            _id			
+            1.0	43	135	0.318519
+            
+        """
+
+        greens = self._greens_by_hole(course_id)                                               # Get the necessary prep data.
+        caledon_pars = self.get_hole_pars(course_id)
+        green_percentage = {}
+        for _, row in greens.iterrows():
+            hole_number = row['hole_number']
+            strokes = row['strokes']
+            putts = row['putts']
+            hit = self._is_hit(caledon_pars, hole_number, strokes, putts)                      # Count the number of times the greens have been hit.
+            if hole_number not in green_percentage:
+                green_percentage[hole_number] = {'hit_count': 0, 'attempt': 0}
+            if hit:
+                green_percentage[hole_number]['hit_count'] += 1
+            green_percentage[hole_number]['attempt'] += 1
+        green_perct = DataFrame(green_percentage).T
+        green_perct.index.names = ['_id']
+        green_perct['hit_percentage'] = green_perct['hit_count'] / green_perct['attempt']
+        return green_perct
