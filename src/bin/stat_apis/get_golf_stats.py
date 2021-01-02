@@ -21,6 +21,17 @@ class Stats():
         db = client.Golf_Stats_DB
         self.collection = db.Scorecards
 
+    def get_aggregate(self, query):
+
+        """
+        Function Description: Query the data base given a mongoDB query.
+        Function Parameters: query (List: A query.),
+        Function Throws: Nothing
+        Function Returns: (Dict: The results from the query.)
+        """
+
+        return self.collection.aggregate(query)
+
     def get_putting_avg_by_hole(self, course_id):
 
         """
