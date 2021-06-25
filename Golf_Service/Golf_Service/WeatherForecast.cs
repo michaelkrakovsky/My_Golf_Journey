@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Golf_Service
+namespace GolfService
 {
     public class WeatherForecast
     {

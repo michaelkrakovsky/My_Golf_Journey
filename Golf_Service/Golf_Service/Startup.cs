@@ -10,8 +10,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using GolfService.Services;
+using GolfService.DbContexts;
+using Microsoft.EntityFrameworkCore;
 
-namespace Golf_Service
+namespace GolfService
 {
     public class Startup
     {
@@ -25,8 +28,12 @@ namespace Golf_Service
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
+            services.AddScoped<IRoundRepository, RoundRepository>();
+            services.AddDbContext<RoundContext>(options =>
+            {
+                options.UseNpgsql();//FINDSTRING);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
