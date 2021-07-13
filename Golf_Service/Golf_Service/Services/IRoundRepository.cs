@@ -1,10 +1,8 @@
 ﻿using System;
 namespace GolfService.Services
 {
-    public class IRoundRepository
+    public interface IRoundRepository
     {
-        public IRoundRepository()
-        {
-        }
+        public abstract int UpdateGarminRounds();
     }
 }
