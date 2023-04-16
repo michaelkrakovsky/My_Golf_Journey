@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.810.2
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GolfService", "Golf_Service\GolfService.csproj", "{68407B5C-739F-4F2C-8562-C69D7C97B433}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GolfService", "Golf_Service\GolfService.csproj", "{68407B5C-739F-4F2C-8562-C69D7C97B433}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Golf_Project_DB", "Golf_Project_DB\Golf_Project_DB.sqlproj", "{F1F5B5C1-1629-41A5-99F8-BF18CC7400FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,12 @@ Global
 		{68407B5C-739F-4F2C-8562-C69D7C97B433}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68407B5C-739F-4F2C-8562-C69D7C97B433}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68407B5C-739F-4F2C-8562-C69D7C97B433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F5B5C1-1629-41A5-99F8-BF18CC7400FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F5B5C1-1629-41A5-99F8-BF18CC7400FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F5B5C1-1629-41A5-99F8-BF18CC7400FB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F1F5B5C1-1629-41A5-99F8-BF18CC7400FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F5B5C1-1629-41A5-99F8-BF18CC7400FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F5B5C1-1629-41A5-99F8-BF18CC7400FB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
