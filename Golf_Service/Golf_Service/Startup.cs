@@ -1,15 +1,7 @@
-﻿using System;
-using OpenIddict.Abstractions;
+﻿using OpenIddict.Abstractions;
 using static OpenIddict.Abstractions.OpenIddictConstants;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using GolfService.DbContexts;
 using Microsoft.EntityFrameworkCore;
-using System.Threading;
 
 namespace GolfService
 {
@@ -156,11 +148,13 @@ namespace GolfService
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
+            app.UseEndpoints(options =>
             {
-                endpoints.MapControllers();
+                options.MapControllers();
+                options.MapDefaultControllerRoute();
             });
         }
     }
