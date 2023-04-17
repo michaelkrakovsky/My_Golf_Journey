@@ -2,160 +2,132 @@
 using static OpenIddict.Abstractions.OpenIddictConstants;
 using GolfService.DbContexts;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Quartz;
+using GolfService.Entities;
 
-namespace GolfService
+namespace GolfService;
+    
+public class Startup
 {
-    public class Worker : IHostedService
+    public Startup(IConfiguration configuration, IWebHostEnvironment env)
     {
-        public static string INTERNAL_CLIENT_ID = "XXXXE";
-        public static string HUB_CLIENT_ID = "XXXXXE";
+        var builder = new ConfigurationBuilder()
+            .SetBasePath(env.ContentRootPath)
+            .AddJsonFile("appsettings.json",
+                         optional: false,
+                         reloadOnChange: true)
+            .AddConfiguration(configuration)
+            .AddEnvironmentVariables();
 
-        private readonly IServiceProvider _serviceProvider;
-
-        public Worker(IServiceProvider serviceProvider)
-            => _serviceProvider = serviceProvider;
-
-        public async Task StartAsync(CancellationToken cancellationToken)
+        if (env.IsDevelopment())
         {
-            using var scope = _serviceProvider.CreateScope();
-
-            var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-
-            var manager = scope.ServiceProvider.GetRequiredService<IOpenIddictApplicationManager>();
-
-            if (await manager.FindByClientIdAsync(HUB_CLIENT_ID) is null)
-            {
-                await manager.CreateAsync(new OpenIddictApplicationDescriptor
-                {
-                    ClientId = HUB_CLIENT_ID,
-                    DisplayName = "Hub Client",
-                    Permissions =
-                    {
-                        Permissions.Endpoints.Token,
-                        Permissions.Endpoints.Logout,
-                        Permissions.GrantTypes.RefreshToken,
-                        Permissions.GrantTypes.Password,
-                        Permissions.Scopes.Email,
-                        Permissions.Scopes.Profile,
-                        Permissions.Scopes.Roles
-                    }
-                });
-            }
-
-            if (await manager.FindByClientIdAsync(INTERNAL_CLIENT_ID) is null)
-            {
-                await manager.CreateAsync(new OpenIddictApplicationDescriptor
-                {
-                    ClientId = INTERNAL_CLIENT_ID,
-                    ClientSecret = "42C432E4-4896-425D-A5CE-4716D7583F04",
-                    DisplayName = "Internal",
-                    Permissions =
-                    {
-                        Permissions.Endpoints.Token,
-                        Permissions.Endpoints.Logout,
-                        Permissions.GrantTypes.RefreshToken,
-                        Permissions.GrantTypes.ClientCredentials,
-                        Permissions.Scopes.Email,
-                        Permissions.Scopes.Profile,
-                        Permissions.Scopes.Roles
-                    }
-                });
-            }
+            builder.AddUserSecrets<Startup>();
         }
 
-        public Task StopAsync(CancellationToken cancellationToken) => Task.CompletedTask;
+        Configuration = builder.Build();
     }
 
-    public class Startup
+    public IConfiguration Configuration { get; }
+
+    public void ConfigureServices(IServiceCollection services)
     {
-        public Startup(IConfiguration configuration)
+        services.AddCors();
+        services.AddControllersWithViews();
+
+        services.AddDbContext<ApplicationDbContext>(options =>
         {
-            Configuration = configuration;
-        }
+            // Configure the context to use sqlite.
+            options.UseSqlServer(Configuration.GetConnectionString("PlatformDatabase"));
 
-        public IConfiguration Configuration { get; }
+            // Register the entity sets needed by OpenIddict.
+            // Note: use the generic overload if you need
+            // to replace the default OpenIddict entities.
+            options.UseOpenIddict();
+        });
 
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        // Register the Identity services.
+        services.AddIdentity<Member, IdentityRole>()
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
+
+        // OpenIddict offers native integration with Quartz.NET to perform scheduled tasks
+        // (like pruning orphaned authorizations/tokens from the database) at regular intervals.
+        services.AddQuartz(options =>
         {
-            services.AddControllersWithViews();
+            options.UseMicrosoftDependencyInjectionJobFactory();
+            options.UseSimpleTypeLoader();
+            options.UseInMemoryStore();
+        });
 
-            services.AddDbContext<ApplicationDbContext>(options =>
+        // Register the Quartz.NET service and configure it to block shutdown until jobs are complete.
+        services.AddQuartzHostedService(options => options.WaitForJobsToComplete = true);
+
+        services.AddOpenIddict()
+
+            // Register the OpenIddict core components.
+            .AddCore(options =>
             {
-                // Configure Entity Framework Core to use Microsoft SQL Server.
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+                // Configure OpenIddict to use the Entity Framework Core stores and models.
+                // Note: call ReplaceDefaultEntities() to replace the default OpenIddict entities.
+                options.UseEntityFrameworkCore()
+                       .UseDbContext<ApplicationDbContext>();
 
-                // Register the entity sets needed by OpenIddict.
-                // Note: use the generic overload if you need to replace the default OpenIddict entities.
-                options.UseOpenIddict();
+                // Enable Quartz.NET integration.
+                options.UseQuartz();
+            })
+
+            // Register the OpenIddict server components.
+            .AddServer(options =>
+            {
+                // Enable the token endpoint.
+                options.SetTokenEndpointUris("connect/token");
+
+                // Enable the password flow.
+                options.AllowPasswordFlow();
+
+                // Accept anonymous clients (i.e clients that don't send a client_id).
+                options.AcceptAnonymousClients();
+
+                // Register the signing and encryption credentials.
+                options.AddDevelopmentEncryptionCertificate()
+                       .AddDevelopmentSigningCertificate();
+
+                // Register the ASP.NET Core host and configure the ASP.NET Core-specific options.
+                options.UseAspNetCore()
+                       .EnableTokenEndpointPassthrough();
+            })
+
+            // Register the OpenIddict validation components.
+            .AddValidation(options =>
+            {
+                // Import the configuration from the local OpenIddict server instance.
+                options.UseLocalServer();
+
+                // Register the ASP.NET Core host.
+                options.UseAspNetCore();
             });
 
-            services.AddOpenIddict()
+        // Register the worker responsible for creating and seeding the SQL database.
+        // Note: in a real world application, this step should be part of a setup script.
+        services.AddHostedService<Worker>();
+    }
 
-                // Register the OpenIddict core components.
-                .AddCore(options =>
-                {
-                    // Configure OpenIddict to use the Entity Framework Core stores and models.
-                    // Note: call ReplaceDefaultEntities() to replace the default entities.
-                    options.UseEntityFrameworkCore()
-                           .UseDbContext<ApplicationDbContext>();
-                })
+    public void Configure(IApplicationBuilder app)
+    {
+        app.UseDeveloperExceptionPage();
 
-                // Register the OpenIddict server components.
-                .AddServer(options =>
-                {
-                    // Enable the token endpoint.
-                    options.SetTokenEndpointUris("connect/token");
+        app.UseRouting();
 
-                    // Enable the client credentials flow.
-                    options.AllowClientCredentialsFlow();
+        app.UseAuthentication();
+        app.UseAuthorization();
 
-                    // Register the signing and encryption credentials.
-                    options.AddDevelopmentEncryptionCertificate()
-                           .AddDevelopmentSigningCertificate();
-
-                    // Register the ASP.NET Core host and configure the ASP.NET Core options.
-                    options.UseAspNetCore()
-                           .EnableTokenEndpointPassthrough();
-                })
-
-                // Register the OpenIddict validation components.
-                .AddValidation(options =>
-                {
-                    // Import the configuration from the local OpenIddict server instance.
-                    options.UseLocalServer();
-
-                    // Register the ASP.NET Core host.
-                    options.UseAspNetCore();
-                });
-
-            // Register the worker responsible of seeding the database with the sample clients.
-            // Note: in a real world application, this step should be part of a setup script.
-            services.AddHostedService<Worker>();
-
-            services.AddControllers();
-        }
-
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        app.UseEndpoints(options =>
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            options.MapControllers();
+            options.MapDefaultControllerRoute();
+        });
 
-            app.UseHttpsRedirection();
-
-            app.UseRouting();
-
-            app.UseAuthentication();
-            app.UseAuthorization();
-
-            app.UseEndpoints(options =>
-            {
-                options.MapControllers();
-                options.MapDefaultControllerRoute();
-            });
-        }
+        app.UseWelcomePage();
     }
 }
