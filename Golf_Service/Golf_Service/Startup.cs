@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Quartz;
 using GolfService.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using GolfService.Properties;
 
 namespace GolfService;
     
@@ -38,7 +40,7 @@ public class Startup
         services.AddDbContext<ApplicationDbContext>(options =>
         {
             // Configure the context to use sqlite.
-            options.UseSqlServer(Configuration.GetConnectionString("PlatformDatabase"));
+            options.UseSqlServer(Configuration.GetValue<string>("ConnectionString"));
 
             // Register the entity sets needed by OpenIddict.
             // Note: use the generic overload if you need
@@ -47,9 +49,10 @@ public class Startup
         });
 
         // Register the Identity services.
-        services.AddIdentity<Member, IdentityRole>()
-            .AddEntityFrameworkStores<ApplicationDbContext>()
-            .AddDefaultTokenProviders();
+        services.AddDbContext<ApplicationDbContext>();
+        services.AddIdentity<IdentityUser, IdentityRole>()
+                        .AddEntityFrameworkStores<ApplicationDbContext>()
+                        .AddDefaultTokenProviders();
 
         // OpenIddict offers native integration with Quartz.NET to perform scheduled tasks
         // (like pruning orphaned authorizations/tokens from the database) at regular intervals.
