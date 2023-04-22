@@ -7,6 +7,9 @@ using Quartz;
 using GolfService.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using GolfService.Properties;
+using Microsoft.Net.Http.Headers;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
 
 namespace GolfService;
     
@@ -34,6 +37,47 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddControllers();
+        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+        services.AddEndpointsApiExplorer();
+        services.AddSwaggerGen(options =>
+        {
+            options.SwaggerDoc("v1", new OpenApiInfo { Title = "Golf Service", Version = "v1" });
+            options.OperationFilter<SecurityRequirementsOperationFilter>();
+            options.OperationFilter<AppendAuthorizeToSummaryOperationFilter>();
+            options.AddSecurityDefinition
+            (
+                "oauth2",
+                new OpenApiSecurityScheme
+                {
+                    Flows = new OpenApiOAuthFlows
+                    {
+                        ClientCredentials = new OpenApiOAuthFlow
+                        {
+                            TokenUrl = new Uri("/connect/token", UriKind.Relative),
+                            RefreshUrl = new Uri("/connect/token", UriKind.Relative),
+                            Scopes = new Dictionary<string, string>(),
+                        },
+                        Password = new OpenApiOAuthFlow
+                        {
+                            TokenUrl = new Uri("/connect/token", UriKind.Relative),
+                            RefreshUrl = new Uri("/connect/token", UriKind.Relative),
+                            Scopes = new Dictionary<string, string>
+                            {
+                                    { "openid", "" },
+                                    { "offline_access", "" },
+                                    { "profile", "" },
+                                    { "roles", "" }
+                            }
+                        }
+                    },
+                    In = ParameterLocation.Header,
+                    Name = HeaderNames.Authorization,
+                    Type = SecuritySchemeType.OAuth2
+                }
+            );
+        });
+
         services.AddCors();
         services.AddControllersWithViews();
 
@@ -65,6 +109,11 @@ public class Startup
 
         // Register the Quartz.NET service and configure it to block shutdown until jobs are complete.
         services.AddQuartzHostedService(options => options.WaitForJobsToComplete = true);
+
+        services.AddSwaggerGen(options =>
+        {
+            options.SwaggerDoc("v1", new OpenApiInfo { Title = "My Golf Service API", Version = "v1" });
+        });
 
         services.AddOpenIddict()
 
@@ -124,6 +173,11 @@ public class Startup
 
         app.UseAuthentication();
         app.UseAuthorization();
+
+        app.UseSwaggerUI(c =>
+        {
+            c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+        });
 
         app.UseEndpoints(options =>
         {
